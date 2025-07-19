@@ -11,6 +11,7 @@ import About from "./pages/About";
 import HomeownerServiceRequest from "./pages/HomeownerServiceRequest";
 import Homes from "./pages/Homes";
 import Home1691A from "./pages/Home1691A";
+import OceansideII from "./pages/OceansideII";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -30,6 +31,7 @@ const App = () => (
           />
           <Route path="/homes" element={<Homes />} />
           <Route path="/homes/home-1691-a" element={<Home1691A />} />
+          <Route path="/homes/oceanside-ii" element={<OceansideII />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
