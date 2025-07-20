@@ -38,43 +38,43 @@ export default function Homes() {
     {
       name: "Oceanside",
       image:
-        "https://api.builder.io/api/v1/image/assets/TEMP/34d0068b323a241bcca6fbf20a7935220ea6fb25?width=500",
+        "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fa2654f12e33849a191edca4b383ac591",
       description: "1,691 Sq. Ft. | 4 Bed, 2 1/2 Bath",
     },
     {
       name: "Skyview",
       image:
-        "https://api.builder.io/api/v1/image/assets/TEMP/4326f41ef3da8aeba7c2d1ff2617b4c4baf0ccb9?width=500",
+        "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F23e3b0a4226c40e5a4e2306acbab1609",
       description: "1,724 Sq. Ft. | 4 Bed, 2 1/2 Bath",
     },
     {
       name: "Windridge",
       image:
-        "https://api.builder.io/api/v1/image/assets/TEMP/54905e1a5e26ea402c02128137db099e4ecc5793?width=500",
+        "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F1fe5686cf79b4cd18e084a05011336cc",
       description: "1,791 Sq. Ft. | 5 Bed, 2 1/2 Bath\nMain Floor Bedroom",
     },
     {
       name: "Mountain Top",
       image:
-        "https://api.builder.io/api/v1/image/assets/TEMP/63d3c05c70070499f38229ebc6a8a78050c5eb76?width=500",
+        "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fa4c4154817a34741952a27e52cb3f2e7",
       description: "1,874 Sq. Ft. | 4 Bed, 3 Full Bath\nPlus Den / Office",
     },
     {
       name: "Oceanside II",
       image:
-        "https://api.builder.io/api/v1/image/assets/TEMP/f1a9898baa3b4b48a95104aeeb2b8a275a92788f?width=500",
+        "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fa8dea5c3b40e4e3eb3f535032c1dee78",
       description: "1,746 Sq. Ft. | 4 Bed, 2 1/2 Bath",
     },
     {
       name: "Skyview II",
       image:
-        "https://api.builder.io/api/v1/image/assets/TEMP/7cd7593b4417e442334b5040c4b54d1e0bbd4231?width=500",
+        "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fdd4d622210c34a53af776acadfd5ab9a",
       description: "1,824 Sq. Ft. | 4 Bed, 2 1/2 Bath",
     },
     {
       name: "Mountain Top II",
       image:
-        "https://api.builder.io/api/v1/image/assets/TEMP/2c87556c57307f5dba6a675eb31520a1f5769c5e?width=500",
+        "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F40fc77d7611544d2aac4f5cffe681626",
       description: "1,890 Sq. Ft. | 5 Bed, 3 Bath\nMain Floor Bedroom",
     },
   ];
@@ -273,7 +273,7 @@ export default function Homes() {
         className="relative h-[400px] sm:h-[500px] lg:h-[690px] flex items-center justify-center overflow-hidden"
         style={{
           background:
-            "url('https://api.builder.io/api/v1/image/assets/TEMP/bc9021645bf723cb2a0e6fe9761a7783c898a9af?width=3840') lightgray 0px -295.128px / 100% 185.544% no-repeat",
+            "url('https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fffeb4fb889304cf2806957e0e6786131') lightgray 0px -295.128px / 100% 185.544% no-repeat",
         }}
       >
         {/* Background overlay */}
@@ -355,138 +355,14 @@ export default function Homes() {
       {/* Interactive Map Section */}
       <section className="py-12 lg:py-16 bg-white">
         <div className="max-w-[1120px] mx-auto px-4">
-          <div className="bg-gray-200 rounded-lg overflow-hidden min-h-[600px] relative">
-            {/* Map Header */}
-            <div className="bg-white h-[85px] flex items-center justify-between px-4 border-b">
-              <div className="flex items-center gap-4">
-                <div className="w-[90px] h-[72px] flex items-center">
-                  <svg
-                    width="90"
-                    height="73"
-                    viewBox="0 0 90 73"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g clipPath="url(#clip0_24_90)">
-                      <path
-                        fillRule="evenodd"
-                        clipRule="evenodd"
-                        d="M43.0781 0.380005L53.1331 8.09406V3.93367H63.6412V16.4236L85.0142 33.1426C82.7315 33.1426 80.3963 32.9348 78.0437 32.9348H73.757L42.9998 8.76155L19.3612 27.2229H22.5677V39.7386C33.0231 34.0096 53.8737 30.9152 68.2853 33.2642C49.3996 34.6279 31.2433 41.0787 15.7628 51.9249V33.94H0.000579834L43.0781 0.380005Z"
-                        fill="#D19837"
-                      />
-                      <path
-                        fillRule="evenodd"
-                        clipRule="evenodd"
-                        d="M54.3964 40.2329C65.7722 36.4335 77.722 34.6156 89.7194 34.8587C82.5793 35.742 75.5433 37.3183 68.7122 39.5654C47.2257 46.6723 30.5485 59.1102 22.6722 72.38L11.1358 68.8522C19.8489 57.1339 35.1668 46.482 54.3964 40.1546V40.2329Z"
-                        fill="#D19837"
-                      />
-                      <path
-                        fillRule="evenodd"
-                        clipRule="evenodd"
-                        d="M38.042 17.7666H42.6599V22.3517H38.042V17.7666ZM44.9426 24.51H49.5521V29.1038H44.9426V24.51ZM38.042 24.51H42.6599V29.1038H38.042V24.51ZM44.9426 17.7666H49.5521V22.3517H44.9426V17.7666Z"
-                        fill="#D19837"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_24_90">
-                        <rect
-                          width="89.7188"
-                          height="72"
-                          fill="white"
-                          transform="translate(0.000579834 0.380005)"
-                        />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </div>
-              </div>
-              <div className="text-[18px] font-normal text-gray-700 uppercase">
-                Paseo
-              </div>
-            </div>
-
-            {/* Map Content */}
-            <div className="relative h-[515px] bg-white border-t">
-              {/* Left Control Panel */}
-              <div className="absolute left-0 top-0 w-[46px] h-full bg-gray-300 flex flex-col items-center py-4 gap-4">
-                <button className="w-5 h-5 flex items-center justify-center">
-                  <svg width="20" height="21" viewBox="0 0 20 21" fill="none">
-                    <path
-                      d="M16.25 8.25V3.94922C16.25 3.69922 16.1523 3.46094 15.9766 3.28516L13.7109 1.02344C13.5352 0.847656 13.2969 0.75 13.0469 0.75H4.6875C4.17188 0.75 3.75 1.17188 3.75 1.6875V8.25C1.67969 8.25 0 9.92969 0 12V17.3125C0 17.8281 0.421875 18.25 0.9375 18.25H3.75V19.8125C3.75 20.3281 4.17188 20.75 4.6875 20.75H15.3125C15.8281 20.75 16.25 20.3281 16.25 19.8125V18.25H19.0625C19.5781 18.25 20 17.8281 20 17.3125V12C20 9.92969 18.3203 8.25 16.25 8.25ZM5 2H12.9219L15 4.07812V10.75H5V2ZM15 19.5H5V15.75H15V19.5ZM18.75 17H16.25V15.4375C16.25 14.9219 15.8281 14.5 15.3125 14.5H4.6875C4.17188 14.5 3.75 14.9219 3.75 15.4375V17H1.25V12C1.25 10.6211 2.37109 9.5 3.75 9.5V11.0625C3.75 11.5781 4.17188 12 4.6875 12H15.3125C15.8281 12 16.25 11.5781 16.25 11.0625V9.5C17.6289 9.5 18.75 10.6211 18.75 12V17ZM17.6562 12.625C17.6562 13.0547 17.3047 13.4062 16.875 13.4062C16.4453 13.4062 16.0938 13.0547 16.0938 12.625C16.0938 12.1953 16.4453 11.8438 16.875 11.8438C17.3047 11.8438 17.6562 12.1953 17.6562 12.625Z"
-                      fill="#333333"
-                    />
-                  </svg>
-                </button>
-                <button className="w-5 h-6 flex items-center justify-center">
-                  <svg width="21" height="24" viewBox="0 0 21 24" fill="none">
-                    <path
-                      d="M19.5908 8.87715H14.0191C13.4215 8.87715 12.9407 8.39637 12.9407 7.79876V2.22706C12.9407 1.9305 13.1834 1.68787 13.4799 1.68787H13.8394C14.1359 1.68787 14.3786 1.9305 14.3786 2.22706V7.43929H19.5908C19.8874 7.43929 20.13 7.68193 20.13 7.97849V8.33795C20.13 8.63451 19.8874 8.87715 19.5908 8.87715Z"
-                      fill="#333333"
-                    />
-                  </svg>
-                </button>
-                <div className="flex flex-col items-center">
-                  <div className="w-0.5 h-[100px] bg-gray-400 relative">
-                    <div className="w-7 h-7 bg-gray-400 rounded-sm absolute left-1/2 transform -translate-x-1/2 top-20 flex items-center justify-center">
-                      <span className="text-gray-700 text-xs">⊞</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Map Area */}
-              <div className="ml-[46px] mr-[234px] h-full bg-white border-t flex items-center justify-center">
-                <img
-                  src="https://api.builder.io/api/v1/image/assets/TEMP/44b7db769c47f01ea775afdbbe3d5679ed1d7400?width=1476"
-                  alt="Paseo Community Map"
-                  className="w-full h-full object-contain"
-                />
-              </div>
-
-              {/* Right Sidebar - Legend */}
-              <div className="absolute right-0 top-0 w-[234px] h-full bg-gray-200">
-                <div className="h-[42px] bg-brand-gold flex items-center justify-between px-3 border-t border-gray-300 border-opacity-25">
-                  <span className="text-gray-200 text-[14px] font-normal">
-                    Legend
-                  </span>
-                  <span className="text-white text-[14px]">⊞</span>
-                </div>
-                <div className="bg-gray-300 p-4 space-y-4">
-                  <div className="flex items-center gap-2">
-                    <div className="w-[18px] h-[18px] bg-blue-400 border border-gray-500"></div>
-                    <span className="text-gray-700 text-[14px]">Available</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <div className="w-[18px] h-[18px] bg-gray-500 border border-gray-500"></div>
-                    <span className="text-gray-700 text-[14px]">
-                      Future Available
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <div className="w-[18px] h-[18px] bg-green-400 border border-gray-500"></div>
-                    <span className="text-gray-700 text-[14px]">
-                      Quick Move-In
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <div className="w-[18px] h-[18px] bg-red-400 border border-gray-500"></div>
-                    <span className="text-gray-700 text-[14px]">Sold</span>
-                  </div>
-                </div>
-              </div>
-
-              {/* Map Location Pin */}
-              <div className="absolute top-3 left-3">
-                <div className="w-6 h-8 bg-red-600 rounded-t-full flex items-start justify-center pt-1">
-                  <span className="text-white text-sm">📍</span>
-                </div>
-              </div>
-
-              {/* Zoom Controls */}
-              <div className="absolute right-[234px] top-[140px] w-[26px] h-[36px] bg-gray-300 flex items-center justify-center">
-                <span className="text-gray-700 text-xl">⊞</span>
-              </div>
-            </div>
+          <div className="bg-gray-200 overflow-hidden min-h-[600px] relative">
+            {/* Interactive Map */}
+            <iframe
+              src="https://contradovip.com/choice-valley-homes/paseo/site/"
+              width="100%"
+              height="600"
+              style={{ border: "none", display: "block" }}
+            />
           </div>
         </div>
       </section>
@@ -497,7 +373,7 @@ export default function Homes() {
           <div className="text-center mb-8 lg:mb-12">
             <div className="mb-4 lg:mb-6 flex justify-center">
               <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/aea86c6f66b0c6fdf958cda26fe6470720b45b2e?width=216"
+                src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F0aacace864474c43bced7c92bb6907ae"
                 alt="Contact"
                 className="w-[80px] h-[80px] sm:w-[108px] sm:h-[108px] rounded-full border-3 border-brand-gold border-opacity-34"
               />
@@ -812,7 +688,7 @@ export default function Homes() {
             {/* Equal Housing Logo */}
             <div className="flex justify-center">
               <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/2fa4e6a981c2976850756be421a86ccab0534b40?width=179"
+                src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fc1612309158a45dda0c4fb3b85d490a6"
                 alt="Equal Housing Opportunity"
                 className="w-[90px] h-[96px]"
               />
