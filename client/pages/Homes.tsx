@@ -38,43 +38,43 @@ export default function Homes() {
     {
       name: "Oceanside",
       image:
-        "https://api.builder.io/api/v1/image/assets/TEMP/34d0068b323a241bcca6fbf20a7935220ea6fb25?width=500",
+        "https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2F1691A-1.jpg",
       description: "1,691 Sq. Ft. | 4 Bed, 2 1/2 Bath",
     },
     {
       name: "Skyview",
       image:
-        "https://api.builder.io/api/v1/image/assets/TEMP/4326f41ef3da8aeba7c2d1ff2617b4c4baf0ccb9?width=500",
+        "https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FSkyview-B.jpg",
       description: "1,724 Sq. Ft. | 4 Bed, 2 1/2 Bath",
     },
     {
       name: "Windridge",
       image:
-        "https://api.builder.io/api/v1/image/assets/TEMP/54905e1a5e26ea402c02128137db099e4ecc5793?width=500",
+        "https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2F1791A-1.jpg",
       description: "1,791 Sq. Ft. | 5 Bed, 2 1/2 Bath\nMain Floor Bedroom",
     },
     {
       name: "Mountain Top",
       image:
-        "https://api.builder.io/api/v1/image/assets/TEMP/63d3c05c70070499f38229ebc6a8a78050c5eb76?width=500",
+        "https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FMountain-Top-A.jpg",
       description: "1,874 Sq. Ft. | 4 Bed, 3 Full Bath\nPlus Den / Office",
     },
     {
       name: "Oceanside II",
       image:
-        "https://api.builder.io/api/v1/image/assets/TEMP/f1a9898baa3b4b48a95104aeeb2b8a275a92788f?width=500",
+        "https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2F1691A-2.jpg",
       description: "1,746 Sq. Ft. | 4 Bed, 2 1/2 Bath",
     },
     {
       name: "Skyview II",
       image:
-        "https://api.builder.io/api/v1/image/assets/TEMP/7cd7593b4417e442334b5040c4b54d1e0bbd4231?width=500",
+        "https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FSkyview-B1.jpg",
       description: "1,824 Sq. Ft. | 4 Bed, 2 1/2 Bath",
     },
     {
       name: "Mountain Top II",
       image:
-        "https://api.builder.io/api/v1/image/assets/TEMP/2c87556c57307f5dba6a675eb31520a1f5769c5e?width=500",
+        "https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2F1874A-3.jpg",
       description: "1,890 Sq. Ft. | 5 Bed, 3 Bath\nMain Floor Bedroom",
     },
   ];
@@ -273,7 +273,7 @@ export default function Homes() {
         className="relative h-[400px] sm:h-[500px] lg:h-[690px] flex items-center justify-center overflow-hidden"
         style={{
           background:
-            "url('https://api.builder.io/api/v1/image/assets/TEMP/bc9021645bf723cb2a0e6fe9761a7783c898a9af?width=3840') lightgray 0px -295.128px / 100% 185.544% no-repeat",
+            "url('https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2F110-Montage-Front-Photo-.jpg') lightgray 0px -295.128px / 100% 185.544% no-repeat",
         }}
       >
         {/* Background overlay */}
@@ -437,7 +437,7 @@ export default function Homes() {
               {/* Map Area */}
               <div className="ml-[46px] mr-[234px] h-full bg-white border-t flex items-center justify-center">
                 <img
-                  src="https://api.builder.io/api/v1/image/assets/TEMP/44b7db769c47f01ea775afdbbe3d5679ed1d7400?width=1476"
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FNeighborhood_Map_Render-scaled.jpg"
                   alt="Paseo Community Map"
                   className="w-full h-full object-contain"
                 />
@@ -497,7 +497,7 @@ export default function Homes() {
           <div className="text-center mb-8 lg:mb-12">
             <div className="mb-4 lg:mb-6 flex justify-center">
               <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/aea86c6f66b0c6fdf958cda26fe6470720b45b2e?width=216"
+                src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2Fanthony.jpg"
                 alt="Contact"
                 className="w-[80px] h-[80px] sm:w-[108px] sm:h-[108px] rounded-full border-3 border-brand-gold border-opacity-34"
               />
@@ -812,7 +812,7 @@ export default function Homes() {
             {/* Equal Housing Logo */}
             <div className="flex justify-center">
               <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/2fa4e6a981c2976850756be421a86ccab0534b40?width=179"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Equal_Housing_Opportunity_Logo.svg/200px-Equal_Housing_Opportunity_Logo.svg.png"
                 alt="Equal Housing Opportunity"
                 className="w-[90px] h-[96px]"
               />

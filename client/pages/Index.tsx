@@ -277,7 +277,7 @@ export default function Index() {
             <div className="bg-white rounded-md overflow-hidden shadow-sm">
               <div className="aspect-[5/4] overflow-hidden">
                 <img
-                  src="https://api.builder.io/api/v1/image/assets/TEMP/4642c054912f9a7f09342bfc76961525f4b27daa?width=500"
+                  src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fa8dea5c3b40e4e3eb3f535032c1dee78"
                   alt="Oceanside II"
                   className="w-full h-full object-cover"
                 />
@@ -299,7 +299,7 @@ export default function Index() {
             <div className="bg-white rounded-md overflow-hidden shadow-sm">
               <div className="aspect-[5/4] overflow-hidden">
                 <img
-                  src="https://api.builder.io/api/v1/image/assets/TEMP/4898324b6323ae37b8037f34315c18075fe13ab8?width=500"
+                  src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fdd4d622210c34a53af776acadfd5ab9a"
                   alt="Skyview II"
                   className="w-full h-full object-cover"
                 />
@@ -321,7 +321,7 @@ export default function Index() {
             <div className="bg-white rounded-md overflow-hidden shadow-sm">
               <div className="aspect-[5/4] overflow-hidden">
                 <img
-                  src="https://api.builder.io/api/v1/image/assets/TEMP/49ae639d40dd2a8774e5322b77d2bec889de1049?width=500"
+                  src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F40fc77d7611544d2aac4f5cffe681626"
                   alt="Mountain Top II"
                   className="w-full h-full object-cover"
                 />
@@ -345,7 +345,7 @@ export default function Index() {
             <div className="bg-white rounded-md overflow-hidden shadow-sm">
               <div className="aspect-[5/4] overflow-hidden">
                 <img
-                  src="https://api.builder.io/api/v1/image/assets/TEMP/706b4410a60f73ecb19ddda8e058ab9fb073124a?width=500"
+                  src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fa732e5f5f52842c7844bf2d1af96c10f"
                   alt="Windridge"
                   className="w-full h-full object-cover"
                 />
@@ -374,7 +374,7 @@ export default function Index() {
           <div className="flex flex-col lg:flex-row items-center gap-4 lg:gap-6">
             <div className="lg:w-1/2">
               <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/a7541dcdebc1ed25b10290c963079e8b0f8f0eba?width=1328"
+                src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F1b43864218d3427b87d8535f26c560e0"
                 alt="Choice Valley Homes"
                 className="w-full h-auto rounded-lg"
               />
@@ -407,7 +407,7 @@ export default function Index() {
           <div className="flex flex-col lg:flex-row-reverse items-center gap-4 lg:gap-6">
             <div className="lg:w-1/2">
               <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/28538dc69d3d297d5e20c8094586798176f1f575?width=1100"
+                src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F7903484f28194fc6b6723d0e5763fe2a"
                 alt="Modern Interior"
                 className="w-full h-auto rounded-lg"
               />
@@ -447,7 +447,7 @@ export default function Index() {
               <div className="text-center">
                 <div className="mb-6 flex justify-center">
                   <img
-                    src="https://api.builder.io/api/v1/image/assets/TEMP/8bfe020aa38228019eb7854c07896b8148aa49f6?width=200"
+                    src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fd2598d1cddbf405eacc7ffffda3b49ee"
                     alt="Step 1"
                     className="w-[100px] h-[107px]"
                   />
@@ -465,7 +465,7 @@ export default function Index() {
               <div className="text-center">
                 <div className="mb-6 flex justify-center">
                   <img
-                    src="https://api.builder.io/api/v1/image/assets/TEMP/780205b694c49acdc61b80f20d9581a784f08c9b?width=200"
+                    src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fa2990c8790314a83aed8d4b29f833b7c"
                     alt="Step 2"
                     className="w-[100px] h-[107px]"
                   />
@@ -483,7 +483,7 @@ export default function Index() {
               <div className="text-center">
                 <div className="mb-6 flex justify-center">
                   <img
-                    src="https://api.builder.io/api/v1/image/assets/TEMP/49cf472aa919a21b988b83253795aeee780221db?width=200"
+                    src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fd6137a0350c340e5a8227ab838f778de"
                     alt="Step 3"
                     className="w-[100px] h-[107px]"
                   />
@@ -507,7 +507,7 @@ export default function Index() {
           <div className="text-center mb-8 lg:mb-12">
             <div className="mb-4 lg:mb-6 flex justify-center">
               <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/6bc541956d87e433b12bb5413b6748e772883a6a?width=216"
+                src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F0aacace864474c43bced7c92bb6907ae"
                 alt="Contact"
                 className="w-[80px] h-[80px] sm:w-[108px] sm:h-[108px] rounded-full border-3 border-brand-gold border-opacity-34"
               />
@@ -822,7 +822,7 @@ export default function Index() {
             {/* Equal Housing Logo */}
             <div className="flex justify-center">
               <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/7378886e04730af56dfabd13d67eeb0798f02c02?width=179"
+                src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fc1612309158a45dda0c4fb3b85d490a6"
                 alt="Equal Housing Opportunity"
                 className="w-[90px] h-[96px]"
               />
