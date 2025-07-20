@@ -9,12 +9,12 @@ import {
 } from "lucide-react";
 
 // Import high-quality images
-import oceanside2Photo from "../../Images/95348_2_-A.01_Photo-7.jpg"
-import skyview2Photo from "../../Images/95348_4_A_Photo-7.jpg"
-import mountainTop2Photo from "../../Images/95348_4_B_Photo-7.jpg"
-import windridgePhoto from "../../Images/95348_1_B_Photo-10.jpg"
-import mainContentPhoto from "../../Images/95348_4_A_Photo-1.jpg"
-import modernInteriorPhoto from "../../Images/95348_4_A_Photo-10.jpg"
+import oceanside2Photo from "../../../../../Images/95348_2_-A.01_Photo-7.jpg"
+import skyview2Photo from "../../../../../Images/95348_4_A_Photo-7.jpg"
+import mountainTop2Photo from "../../../../../Images/95348_4_B_Photo-7.jpg"
+import windridgePhoto from "../../../../../Images/95348_1_B_Photo-10.jpg"
+import mainContentPhoto from "../../../../../Images/95348_4_A_Photo-1.jpg"
+import modernInteriorPhoto from "../../../../../Images/95348_4_A_Photo-10.jpg"
 
 export default function Index() {
   const [formData, setFormData] = useState({
