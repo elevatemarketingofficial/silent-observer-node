@@ -8,13 +8,6 @@ import {
   ExternalLink,
 } from "lucide-react";
 
-// Import high-quality images
-import oceanside2Photo from "../../../../../Images/95348_2_-A.01_Photo-7.jpg"
-import skyview2Photo from "../../../../../Images/95348_4_A_Photo-7.jpg"
-import mountainTop2Photo from "../../../../../Images/95348_4_B_Photo-7.jpg"
-import windridgePhoto from "../../../../../Images/95348_1_B_Photo-10.jpg"
-import mainContentPhoto from "../../../../../Images/95348_4_A_Photo-1.jpg"
-import modernInteriorPhoto from "../../../../../Images/95348_4_A_Photo-10.jpg"
 
 export default function Index() {
   const [formData, setFormData] = useState({
@@ -285,7 +278,7 @@ export default function Index() {
             <div className="bg-white rounded-md overflow-hidden shadow-sm">
               <div className="aspect-[5/4] overflow-hidden">
                 <img
-                  src={oceanside2Photo}
+                  src="/Images/95348_2_-A.01_Photo-7.jpg"
                   alt="Oceanside II"
                   className="w-full h-full object-cover"
                 />
@@ -307,7 +300,7 @@ export default function Index() {
             <div className="bg-white rounded-md overflow-hidden shadow-sm">
               <div className="aspect-[5/4] overflow-hidden">
                 <img
-                  src={skyview2Photo}
+                  src="/Images/95348_4_A_Photo-7.jpg"
                   alt="Skyview II"
                   className="w-full h-full object-cover"
                 />
@@ -329,7 +322,7 @@ export default function Index() {
             <div className="bg-white rounded-md overflow-hidden shadow-sm">
               <div className="aspect-[5/4] overflow-hidden">
                 <img
-                  src={mountainTop2Photo}
+                  src="/Images/95348_4_B_Photo-7.jpg"
                   alt="Mountain Top II"
                   className="w-full h-full object-cover"
                 />
@@ -353,7 +346,7 @@ export default function Index() {
             <div className="bg-white rounded-md overflow-hidden shadow-sm">
               <div className="aspect-[5/4] overflow-hidden">
                 <img
-                  src={windridgePhoto}
+                  src="/Images/95348_1_B_Photo-10.jpg"
                   alt="Windridge"
                   className="w-full h-full object-cover"
                 />
@@ -382,7 +375,7 @@ export default function Index() {
           <div className="flex flex-col lg:flex-row items-center gap-4 lg:gap-6">
             <div className="lg:w-1/2">
               <img
-                src={mainContentPhoto}
+                src="/Images/95348_4_A_Photo-1.jpg"
                 alt="Choice Valley Homes"
                 className="w-full h-auto rounded-lg"
               />
@@ -415,7 +408,7 @@ export default function Index() {
           <div className="flex flex-col lg:flex-row-reverse items-center gap-4 lg:gap-6">
             <div className="lg:w-1/2">
               <img
-                src={modernInteriorPhoto}
+                src="/Images/95348_4_A_Photo-10.jpg"
                 alt="Modern Interior"
                 className="w-full h-auto rounded-lg"
               />
