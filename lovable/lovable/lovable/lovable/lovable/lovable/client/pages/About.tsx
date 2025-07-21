@@ -228,7 +228,7 @@ export default function About() {
         className="relative h-[400px] sm:h-[500px] lg:h-[690px] flex items-center justify-center overflow-hidden"
         style={{
           background:
-            "url('https://api.builder.io/api/v1/image/assets/TEMP/62776ffec6d5fa46299c179da0aa376652a1bfc6?width=3840') lightgray 0px 0px / 100% 156.522% no-repeat",
+            "url('https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Ff6b9bad3bd5743f58ef87414df684e73') lightgray 0px 0px / 100% 156.522% no-repeat",
         }}
       >
         {/* Content */}
@@ -281,7 +281,7 @@ export default function About() {
             {/* Right Image - positioned appropriately */}
             <div className="lg:w-[550px] lg:absolute lg:right-4 lg:top-24">
               <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/b9f340eb288561138087a6d48ad68e5dc3a9cb75?width=1100"
+                src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F2efbe6f749384e439fa1711aa37738c4"
                 alt="Choice Valley Homes"
                 className="w-full h-auto rounded-lg"
               />
@@ -291,7 +291,7 @@ export default function About() {
       </section>
 
       {/* Spacing */}
-      <div className="h-32 lg:h-64"></div>
+      <div className="h-12"></div>
 
       {/* About Choice Valley Homes Section */}
       <section className="py-8 sm:py-12 lg:py-16">
@@ -300,7 +300,7 @@ export default function About() {
             {/* Left Image */}
             <div className="lg:w-[664px]">
               <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/2b3f3ed7f18d8df7ef35e80075957e2e49aa1def?width=1328"
+                src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fe4179810651a44a1be7d805befea5139"
                 alt="Choice Valley Homes Building"
                 className="w-full h-auto rounded-lg"
               />
@@ -400,7 +400,7 @@ export default function About() {
             {/* Professionalism */}
             <div className="relative overflow-hidden rounded-lg">
               <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/82db3dd99a67b1757c1ebee6443e5239aae4424f?width=1160"
+                src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F42888b9f4fb345a0b7620c5d8e6cf5c6"
                 alt="Professionalism"
                 className="w-full h-[280px] object-cover"
               />
@@ -420,7 +420,7 @@ export default function About() {
             {/* Convenience */}
             <div className="relative overflow-hidden rounded-lg">
               <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/7fc729c612ce2053a4abcec15e21245afe9eb3f7?width=1160"
+                src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F5b1c1af36a51452fb89ab36958f58be6"
                 alt="Convenience"
                 className="w-full h-[280px] object-cover"
               />
@@ -443,7 +443,7 @@ export default function About() {
             {/* People First */}
             <div className="relative overflow-hidden rounded-lg">
               <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/133857164c390ae05ddeeb38cf2dc7a778269e2f?width=1160"
+                src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F999450ede1c54c2987e79c784fb7c33e"
                 alt="People First"
                 className="w-full h-[280px] object-cover"
               />
@@ -462,7 +462,7 @@ export default function About() {
             {/* Flexibility */}
             <div className="relative overflow-hidden rounded-lg">
               <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/894c23e1568c7f5557131e83e98faf1b031304a6?width=1160"
+                src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Ff80bc851f09d40579641e193f7151629"
                 alt="Flexibility"
                 className="w-full h-[280px] object-cover"
               />
@@ -488,7 +488,7 @@ export default function About() {
           <div className="text-center mb-8 lg:mb-12">
             <div className="mb-4 lg:mb-6 flex justify-center">
               <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/e77a025832448c22fb3aef29e7810f44e28495f6?width=216"
+                src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F0aacace864474c43bced7c92bb6907ae"
                 alt="Contact"
                 className="w-[80px] h-[80px] sm:w-[108px] sm:h-[108px] rounded-full border-3 border-brand-gold border-opacity-34"
               />
@@ -803,7 +803,7 @@ export default function About() {
             {/* Equal Housing Logo */}
             <div className="flex justify-center">
               <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/2fa4e6a981c2976850756be421a86ccab0534b40?width=179"
+                src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fc1612309158a45dda0c4fb3b85d490a6"
                 alt="Equal Housing Opportunity"
                 className="w-[90px] h-[96px]"
               />

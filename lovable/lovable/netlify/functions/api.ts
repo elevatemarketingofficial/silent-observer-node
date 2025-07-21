@@ -1,5 +1,11 @@
-import serverless from "serverless-http";
 
+import { Handler } from "@netlify/functions";
+import serverless from "serverless-http";
 import { createServer } from "../../server";
 
-export const handler = serverless(createServer());
+const app = createServer();
+const handler = serverless(app);
+
+export const handler: Handler = async (event, context) => {
+  return await handler(event, context);
+};

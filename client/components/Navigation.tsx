@@ -117,7 +117,7 @@ export default function Navigation() {
               to="/homes/skyview"
               className="block px-4 py-3 text-[14px] text-gray-700 hover:bg-gray-50 hover:text-brand-gold transition-colors border-b border-gray-100"
             >
-              Skyview
+              Skyview 1
             </Link>
             <Link
               to="/homes/skyview-ii"
@@ -131,9 +131,12 @@ export default function Navigation() {
             >
               Windridge
             </Link>
-            <div className="px-4 py-3 text-[14px] text-gray-400 cursor-not-allowed border-b border-gray-100">
+            <Link
+              to="/homes/mountain-top"
+              className="block px-4 py-3 text-[14px] text-gray-700 hover:bg-gray-50 hover:text-brand-gold transition-colors border-b border-gray-100"
+            >
               Mountain Top
-            </div>
+            </Link>
             <div className="px-4 py-3 text-[14px] text-gray-400 cursor-not-allowed">
               Mountain Top II
             </div>
