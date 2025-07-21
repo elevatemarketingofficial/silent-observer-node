@@ -13,24 +13,25 @@ jobs:
       - name: Checkout Builder Repo
         uses: actions/checkout@v4
 
-      # ——— 2. Clone the Lovable-linked repo and overwrite its files ———
-    - name: Clean old lovable folder
-  run: rm -rf lovable
+      # ——— 2. Clean old lovable folder ———
+      - name: Clean old lovable folder
+        run: rm -rf lovable
 
-- name: Clone Lovable Repo
-  env:
-    GH_TOKEN: ${{ secrets.LOVABLE_PAT }}
-    GIT_LFS_SKIP_SMUDGE: "1"
-  run: |
-    git clone --depth 1 https://x-access-token:${GH_TOKEN}@github.com/elevatemarketingofficial/silent-observer-node.git lovable
-    rsync -av --delete \
-      --exclude='.git' \
-      --exclude='.lovable' \
-      --exclude='lovable.json' \
-      ./ lovable/
-    cd lovable
-    git config user.name "Builder Sync Bot"
-    git config user.email "builder-sync@elevate.com"
-    git add .
-    git diff --cached --quiet || git commit -m "🔁 Auto-sync from builder-nova-lab"
-    git push origin main
+      # ——— 3. Clone the Lovable-linked repo and overwrite its files ———
+      - name: Clone Lovable Repo
+        env:
+          GH_TOKEN: ${{ secrets.LOVABLE_PAT }}
+          GIT_LFS_SKIP_SMUDGE: "1"
+        run: |
+          git clone --depth 1 https://x-access-token:${GH_TOKEN}@github.com/elevatemarketingofficial/silent-observer-node.git lovable
+          rsync -av --delete \
+            --exclude='.git' \
+            --exclude='.lovable' \
+            --exclude='lovable.json' \
+            ./ lovable/
+          cd lovable
+          git config user.name "Builder Sync Bot"
+          git config user.email "builder-sync@elevate.com"
+          git add .
+          git diff --cached --quiet || git commit -m "🔁 Auto-sync from builder-nova-lab"
+          git push origin main
