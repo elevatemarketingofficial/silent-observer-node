@@ -13,6 +13,10 @@ import Homes from "./pages/Homes";
 import Home1691A from "./pages/Home1691A";
 import OceansideII from "./pages/OceansideII";
 import Home1724A from "./pages/Home1724A";
+import Skyview from "./pages/Skyview";
+import Community from "./pages/Community";
+import Contact from "./pages/Contact";
+import Listings from "./pages/Listings";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -34,6 +38,10 @@ const App = () => (
           <Route path="/homes/home-1691-a" element={<Home1691A />} />
           <Route path="/homes/oceanside-ii" element={<OceansideII />} />
           <Route path="/homes/home-1724-a" element={<Home1724A />} />
+          <Route path="/homes/skyview" element={<Skyview />} />
+          <Route path="/community" element={<Community />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/listings" element={<Listings />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
