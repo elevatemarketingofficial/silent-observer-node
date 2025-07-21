@@ -1,12 +1,12 @@
 
 import { useEffect } from "react";
 import { useQuery } from "@tanstack/react-query";
-import { Navigation } from "@/components/Navigation";
-import { Hero } from "@/components/Hero";
-import { FeaturedHomes } from "@/components/FeaturedHomes";
-import { AboutSection } from "@/components/AboutSection";
-import { ContactSection } from "@/components/ContactSection";
-import { Footer } from "@/components/Footer";
+import Navigation from "@/components/Navigation";
+import Hero from "@/components/Hero";
+import FeaturedHomes from "@/components/FeaturedHomes";
+import AboutSection from "@/components/AboutSection";
+import ContactSection from "@/components/ContactSection";
+import Footer from "@/components/Footer";
 
 const fetchApiStatus = async () => {
   try {
