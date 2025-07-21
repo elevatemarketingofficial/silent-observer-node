@@ -14,6 +14,8 @@ import Home1691A from "./pages/Home1691A";
 import OceansideII from "./pages/OceansideII";
 import Home1724A from "./pages/Home1724A";
 import Skyview from "./pages/Skyview";
+import SkyviewII from "./pages/SkyviewII";
+import Windridge from "./pages/Windridge";
 import Community from "./pages/Community";
 import Contact from "./pages/Contact";
 import Listings from "./pages/Listings";
@@ -39,6 +41,8 @@ const App = () => (
           <Route path="/homes/oceanside-ii" element={<OceansideII />} />
           <Route path="/homes/home-1724-a" element={<Home1724A />} />
           <Route path="/homes/skyview" element={<Skyview />} />
+          <Route path="/homes/skyview-ii" element={<SkyviewII />} />
+          <Route path="/homes/windridge" element={<Windridge />} />
           <Route path="/community" element={<Community />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/listings" element={<Listings />} />
@@ -50,4 +54,12 @@ const App = () => (
   </QueryClientProvider>
 );
 
-createRoot(document.getElementById("root")!).render(<App />);
+// Prevent duplicate createRoot warning by using global reference
+const container = document.getElementById("root")!;
+
+// Use globalThis to persist across hot reloads
+if (!(globalThis as any).__reactRoot) {
+  (globalThis as any).__reactRoot = createRoot(container);
+}
+
+(globalThis as any).__reactRoot.render(<App />);

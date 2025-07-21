@@ -58,10 +58,10 @@ export default {
           ring: "hsl(var(--sidebar-ring))",
         },
         brand: {
-          gold: "hsl(var(--brand-gold))",
+          gold: "#D29A3A",
           "dark-blue": "#192A3D",
-          "medium-blue": "hsl(var(--brand-medium-blue))",
-          "light-gray": "hsl(var(--brand-light-gray))",
+          "medium-blue": "#3A4F66",
+          "light-gray": "#F9FAFB",
           "medium-gray": "#F2F4F7",
           "text-gray": "#69727D",
         },

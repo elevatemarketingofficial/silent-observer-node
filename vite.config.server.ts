@@ -1,4 +1,3 @@
-
 import { defineConfig } from "vite";
 import path from "path";
 
@@ -33,8 +32,6 @@ export default defineConfig({
         // External dependencies that should not be bundled
         "express",
         "cors",
-        "serverless-http",
-        "zod",
       ],
       output: {
         format: "es",
