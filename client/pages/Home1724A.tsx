@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Navigation from "../components/Navigation";
+import Header from "../components/Header";
 
 const Home1724A = () => {
   const [firstName, setFirstName] = useState("");
@@ -155,7 +155,7 @@ const Home1724A = () => {
           </div>
 
           {/* Navigation */}
-          <Navigation />
+          <Header />
 
           {/* View Listings Button */}
           <button className="flex items-center space-x-2 bg-brand-gold text-white px-5 py-3 rounded-[3px]">
@@ -369,9 +369,12 @@ const Home1724A = () => {
                 special events & more!
               </p>
             </div>
-            <button className="bg-white text-black px-[40px] py-[20px] text-[18px] font-normal">
+            <Link
+              to="/register"
+              className="bg-white text-black px-[40px] py-[20px] text-[18px] font-normal hover:bg-gray-100 transition-colors inline-block"
+            >
               Register
-            </button>
+            </Link>
           </div>
         </section>
 

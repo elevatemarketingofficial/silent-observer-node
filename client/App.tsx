@@ -17,8 +17,10 @@ import Skyview from "./pages/Skyview";
 import SkyviewII from "./pages/SkyviewII";
 import Windridge from "./pages/Windridge";
 import MountainTop from "./pages/MountainTop";
+import MountainTopII from "./pages/MountainTopII";
 import Community from "./pages/Community";
 import Contact from "./pages/Contact";
+import Register from "./pages/Register";
 import Listings from "./pages/Listings";
 import NotFound from "./pages/NotFound";
 
@@ -45,8 +47,10 @@ const App = () => (
           <Route path="/homes/skyview-ii" element={<SkyviewII />} />
           <Route path="/homes/windridge" element={<Windridge />} />
           <Route path="/homes/mountain-top" element={<MountainTop />} />
+          <Route path="/homes/mountain-top-ii" element={<MountainTopII />} />
           <Route path="/community" element={<Community />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/register" element={<Register />} />
           <Route path="/listings" element={<Listings />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

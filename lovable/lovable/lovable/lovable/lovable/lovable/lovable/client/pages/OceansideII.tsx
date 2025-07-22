@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import Navigation from "../components/Navigation";
 
 const OceansideII = () => {
   return (
@@ -134,36 +136,7 @@ const OceansideII = () => {
             </div>
 
             {/* Navigation */}
-            <nav className="hidden lg:flex items-center space-x-8">
-              <div className="relative group">
-                <button className="text-black uppercase text-sm font-normal flex items-center space-x-2">
-                  <span>About</span>
-                  <svg width="8" height="8" viewBox="0 0 9 9" fill="none">
-                    <path
-                      d="M1.39998 2.68666L4.27998 5.56666L7.15998 2.68666L8.27998 3.27333L4.27998 7.27333L0.279984 3.27333L1.39998 2.68666Z"
-                      fill="black"
-                    />
-                  </svg>
-                </button>
-              </div>
-              <div className="relative group">
-                <button className="text-brand-gold uppercase text-sm font-normal flex items-center space-x-2 border-b-2 border-brand-gold">
-                  <span>Floor Plans</span>
-                  <svg width="8" height="8" viewBox="0 0 9 9" fill="none">
-                    <path
-                      d="M1.25 2.68666L4.13001 5.56666L7.01001 2.68666L8.13001 3.27333L4.13001 7.27333L0.130005 3.27333L1.25 2.68666Z"
-                      fill="#D29A3A"
-                    />
-                  </svg>
-                </button>
-              </div>
-              <button className="text-black uppercase text-sm font-normal">
-                Community
-              </button>
-              <button className="text-black uppercase text-sm font-normal">
-                Contact
-              </button>
-            </nav>
+            <Navigation />
 
             {/* View Listings Button */}
             <button className="bg-brand-gold text-white px-5 py-3 rounded text-sm font-medium flex items-center space-x-2">
@@ -185,7 +158,7 @@ const OceansideII = () => {
           className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage:
-              "url('https://api.builder.io/api/v1/image/assets/TEMP/6c4faa50d4d67adc4eb72365ea6e11ac0216d6cd?width=3840')",
+              "url('https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2F110-Montage-Front-Photo-.jpg')",
           }}
         >
           <div className="absolute inset-0 bg-black/30"></div>
@@ -221,7 +194,7 @@ const OceansideII = () => {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <img
-            src="https://api.builder.io/api/v1/image/assets/TEMP/42281ce993f1e1d75b1bbcbfde16635c2700cc1c?width=2540"
+            src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FOceanside-II-Floor-Plan-1.png"
             alt="Oceanside II Floor Plan - Plan 1746 with 4 bedrooms, 2.5 baths, 2 car garage"
             className="w-full h-auto"
           />
@@ -241,7 +214,7 @@ const OceansideII = () => {
           <div className="relative bg-black h-[711px] max-w-[1270px] mx-auto overflow-hidden">
             {/* Video thumbnail and controls */}
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/66b2d5716368bc7fd96214912b7542ce5f224f0b?width=2540"
+              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FLivingroom.jpg"
               alt="Oceanside II Video Tour"
               className="w-full h-full object-cover"
             />
@@ -266,14 +239,14 @@ const OceansideII = () => {
             {/* Video header */}
             <div className="absolute top-0 left-0 right-0 p-4">
               <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/578c10842441107afa3e8a68758dea56089ad584?width=2540"
+                src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FMaster-Bedroom.jpg"
                 alt="Video header"
                 className="w-full h-[99px] object-cover"
               />
               <div className="absolute top-6 left-16">
                 <div className="flex items-center space-x-4">
                   <img
-                    src="https://api.builder.io/api/v1/image/assets/TEMP/b8da54bbd73aae808eb62644052537c3565f4338?width=80"
+                    src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2Fcropped-CVH-icon-2.png"
                     alt="Choice Valley Homes"
                     className="w-10 h-10 rounded-full"
                   />
@@ -312,7 +285,7 @@ const OceansideII = () => {
             <div className="absolute bottom-0 left-0 bg-black/80 rounded-tr px-3 py-4 flex items-center space-x-2">
               <span className="text-white text-base">Watch on</span>
               <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/bf07feb0c4a6b66e23a7cab04e295fa58e31aec4?width=144"
+                src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FCVH-icon-2.svg"
                 alt="YouTube"
                 className="h-4"
               />
@@ -333,132 +306,132 @@ const OceansideII = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-2 max-w-[1270px] mx-auto">
             {/* Row 1 */}
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/f6b341594e984f9e5297022cf663ced7085020de?width=620"
+              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FDSC09064.jpg"
               alt="Home exterior"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/c37aca6f67129184b9d057fdddfb5d1a19e54441?width=620"
+              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FDSC09097.jpg"
               alt="Home exterior view"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/59878bea2d9e359bf91738e994dc8e2632aa4c12?width=620"
+              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FDSC09068.jpg"
               alt="Home front"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/40300a320e13c6e8e508d04afba141d84d61fbae?width=620"
+              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FDSC09151.jpg"
               alt="Interior room"
               className="w-full h-[207px] object-cover"
             />
 
             {/* Row 2 */}
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/b40c74a8bfbeacc3cfe26380b45c270d927bf61a?width=620"
+              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FDSC09048.jpg"
               alt="Living room"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/53f851b6e4b909cfde91a32ffd18df5c6d5fdd52?width=620"
+              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FMaster-Bedroom.jpg"
               alt="Bedroom"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/d9bbdda79689ea71cbd24d7c866ca894395bb522?width=620"
+              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FMaster-Bathroom.jpg"
               alt="Bathroom"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/c3f4dfa244a889fb84091a71280f5f9a8c935041?width=620"
+              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FKitchen.jpg"
               alt="Kitchen"
               className="w-full h-[207px] object-cover"
             />
 
             {/* Row 3 */}
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/0fb46eb4792ea44d12f733bf7ded67c1ed1cbf37?width=620"
+              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FDining.jpg"
               alt="Dining area"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/b9ccaf171fd71f936d6fa76e944c70baf898d40d?width=620"
+              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FDSC09123.jpg"
               alt="Living space"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/92a5047de684b48afadad6ca69b6ce76dccf2721?width=620"
+              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FDSC09147.jpg"
               alt="Master bedroom"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/8ae8b55ab268c0099310594d2da963b773cbf73a?width=620"
+              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FDSC09054.jpg"
               alt="Bathroom vanity"
               className="w-full h-[207px] object-cover"
             />
 
             {/* Row 4 */}
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/58196f92acb668e1726013ef81bd089d7c801051?width=620"
+              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FBedroom-2.jpg"
               alt="Bedroom 2"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/20a70d7ac0b3566d5a71ac4bfe461af0789af11a?width=620"
+              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FBedroom-3.jpg"
               alt="Bedroom 3"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/939884a8cb9599c87faca3303afdc9ec995e82a4?width=620"
+              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FStairs.jpg"
               alt="Staircase"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/69617302a3097a168324d95444ba7397340b4df1?width=620"
+              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FDSC09058.jpg"
               alt="Laundry room"
               className="w-full h-[207px] object-cover"
             />
 
             {/* Row 5 */}
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/bab2f591fc51647aa2caff84cec00f231bfe1733?width=620"
+              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FDSC09077.jpg"
               alt="Walk-in closet"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/bdee15402ac66417837ae3974324269b83803b00?width=620"
+              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FMaster-Bath.jpg"
               alt="Master bathroom"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/af60c85cdc45aa18d4c1ba4b205c76b80ced503a?width=620"
+              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FKitchen-Breakfast-Bar.jpg"
               alt="Kitchen detail"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/cb3d527140771ef06822856430590e8770eab137?width=620"
+              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FDSC09128.jpg"
               alt="Kitchen island"
               className="w-full h-[207px] object-cover"
             />
 
             {/* Row 6 */}
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/e65b580b6114f17fea74098a9977ea5e04b81b5e?width=620"
+              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FDSC09089.jpg"
               alt="Living room view"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/3fb75950732acb21984635ff68595335f1d2513c?width=620"
+              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FDSC09150.jpg"
               alt="Family room"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/c0fc1483065f0df6393b209f1f78b78001022d1a?width=620"
+              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FDSC09073.jpg"
               alt="Dining room"
               className="w-full h-[207px] object-cover"
             />
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/01701d7dc7088c0dcfe5b708da382cada1746aee?width=620"
+              src="https://cdn.builder.io/api/v1/image/assets%2Fa757fd58e3b840c7ae6034a3b5a84411%2FDSC09131.jpg"
               alt="Entry foyer"
               className="w-full h-[207px] object-cover"
             />
@@ -662,7 +635,7 @@ const OceansideII = () => {
           {/* Equal Housing Logo */}
           <div className="flex justify-end mt-8">
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/3e6ac3f800323adc39b4a8948c4932c2680106f2?width=203"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Equal_Housing_Opportunity_Logo.svg/200px-Equal_Housing_Opportunity_Logo.svg.png"
               alt="Equal Housing Opportunity"
               className="w-24 h-auto"
             />

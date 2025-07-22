@@ -7,6 +7,7 @@ import {
   Home,
   ExternalLink,
 } from "lucide-react";
+import Navigation from "../components/Navigation";
 
 export default function Homes() {
   const [formData, setFormData] = useState({
@@ -38,43 +39,43 @@ export default function Homes() {
     {
       name: "Oceanside",
       image:
-        "https://api.builder.io/api/v1/image/assets/TEMP/34d0068b323a241bcca6fbf20a7935220ea6fb25?width=500",
+        "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fa2654f12e33849a191edca4b383ac591",
       description: "1,691 Sq. Ft. | 4 Bed, 2 1/2 Bath",
     },
     {
       name: "Skyview",
       image:
-        "https://api.builder.io/api/v1/image/assets/TEMP/4326f41ef3da8aeba7c2d1ff2617b4c4baf0ccb9?width=500",
+        "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F23e3b0a4226c40e5a4e2306acbab1609",
       description: "1,724 Sq. Ft. | 4 Bed, 2 1/2 Bath",
     },
     {
       name: "Windridge",
       image:
-        "https://api.builder.io/api/v1/image/assets/TEMP/54905e1a5e26ea402c02128137db099e4ecc5793?width=500",
+        "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F1fe5686cf79b4cd18e084a05011336cc",
       description: "1,791 Sq. Ft. | 5 Bed, 2 1/2 Bath\nMain Floor Bedroom",
     },
     {
       name: "Mountain Top",
       image:
-        "https://api.builder.io/api/v1/image/assets/TEMP/63d3c05c70070499f38229ebc6a8a78050c5eb76?width=500",
+        "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fa4c4154817a34741952a27e52cb3f2e7",
       description: "1,874 Sq. Ft. | 4 Bed, 3 Full Bath\nPlus Den / Office",
     },
     {
       name: "Oceanside II",
       image:
-        "https://api.builder.io/api/v1/image/assets/TEMP/f1a9898baa3b4b48a95104aeeb2b8a275a92788f?width=500",
+        "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fa8dea5c3b40e4e3eb3f535032c1dee78",
       description: "1,746 Sq. Ft. | 4 Bed, 2 1/2 Bath",
     },
     {
       name: "Skyview II",
       image:
-        "https://api.builder.io/api/v1/image/assets/TEMP/7cd7593b4417e442334b5040c4b54d1e0bbd4231?width=500",
+        "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fdd4d622210c34a53af776acadfd5ab9a",
       description: "1,824 Sq. Ft. | 4 Bed, 2 1/2 Bath",
     },
     {
       name: "Mountain Top II",
       image:
-        "https://api.builder.io/api/v1/image/assets/TEMP/2c87556c57307f5dba6a675eb31520a1f5769c5e?width=500",
+        "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F40fc77d7611544d2aac4f5cffe681626",
       description: "1,890 Sq. Ft. | 5 Bed, 3 Bath\nMain Floor Bedroom",
     },
   ];
@@ -210,35 +211,7 @@ export default function Homes() {
           </Link>
 
           {/* Navigation */}
-          <nav className="hidden lg:flex items-center space-x-8">
-            <div className="flex items-center space-x-2 cursor-pointer">
-              <span className="text-black text-[15px] font-normal uppercase">
-                About
-              </span>
-              <ChevronDown className="w-4 h-4" />
-            </div>
-            <div className="flex flex-col items-center cursor-pointer">
-              <div className="flex items-center space-x-2">
-                <span className="text-brand-gold text-[15px] font-normal uppercase">
-                  Floor Plans
-                </span>
-                <ChevronDown className="w-4 h-4 text-brand-gold" />
-              </div>
-              <div className="w-[125px] h-[2px] bg-brand-gold mt-1"></div>
-            </div>
-            <Link
-              to="/community"
-              className="text-black text-[16px] font-normal uppercase"
-            >
-              Community
-            </Link>
-            <Link
-              to="/contact"
-              className="text-black text-[16px] font-normal uppercase"
-            >
-              Contact
-            </Link>
-          </nav>
+          <Navigation />
 
           {/* View Listings Button */}
           <Link
@@ -273,7 +246,7 @@ export default function Homes() {
         className="relative h-[400px] sm:h-[500px] lg:h-[690px] flex items-center justify-center overflow-hidden"
         style={{
           background:
-            "url('https://api.builder.io/api/v1/image/assets/TEMP/bc9021645bf723cb2a0e6fe9761a7783c898a9af?width=3840') lightgray 0px -295.128px / 100% 185.544% no-repeat",
+            "url('https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fffeb4fb889304cf2806957e0e6786131') lightgray 0px -295.128px / 100% 185.544% no-repeat",
         }}
       >
         {/* Background overlay */}
@@ -355,138 +328,14 @@ export default function Homes() {
       {/* Interactive Map Section */}
       <section className="py-12 lg:py-16 bg-white">
         <div className="max-w-[1120px] mx-auto px-4">
-          <div className="bg-gray-200 rounded-lg overflow-hidden min-h-[600px] relative">
-            {/* Map Header */}
-            <div className="bg-white h-[85px] flex items-center justify-between px-4 border-b">
-              <div className="flex items-center gap-4">
-                <div className="w-[90px] h-[72px] flex items-center">
-                  <svg
-                    width="90"
-                    height="73"
-                    viewBox="0 0 90 73"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g clipPath="url(#clip0_24_90)">
-                      <path
-                        fillRule="evenodd"
-                        clipRule="evenodd"
-                        d="M43.0781 0.380005L53.1331 8.09406V3.93367H63.6412V16.4236L85.0142 33.1426C82.7315 33.1426 80.3963 32.9348 78.0437 32.9348H73.757L42.9998 8.76155L19.3612 27.2229H22.5677V39.7386C33.0231 34.0096 53.8737 30.9152 68.2853 33.2642C49.3996 34.6279 31.2433 41.0787 15.7628 51.9249V33.94H0.000579834L43.0781 0.380005Z"
-                        fill="#D19837"
-                      />
-                      <path
-                        fillRule="evenodd"
-                        clipRule="evenodd"
-                        d="M54.3964 40.2329C65.7722 36.4335 77.722 34.6156 89.7194 34.8587C82.5793 35.742 75.5433 37.3183 68.7122 39.5654C47.2257 46.6723 30.5485 59.1102 22.6722 72.38L11.1358 68.8522C19.8489 57.1339 35.1668 46.482 54.3964 40.1546V40.2329Z"
-                        fill="#D19837"
-                      />
-                      <path
-                        fillRule="evenodd"
-                        clipRule="evenodd"
-                        d="M38.042 17.7666H42.6599V22.3517H38.042V17.7666ZM44.9426 24.51H49.5521V29.1038H44.9426V24.51ZM38.042 24.51H42.6599V29.1038H38.042V24.51ZM44.9426 17.7666H49.5521V22.3517H44.9426V17.7666Z"
-                        fill="#D19837"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_24_90">
-                        <rect
-                          width="89.7188"
-                          height="72"
-                          fill="white"
-                          transform="translate(0.000579834 0.380005)"
-                        />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </div>
-              </div>
-              <div className="text-[18px] font-normal text-gray-700 uppercase">
-                Paseo
-              </div>
-            </div>
-
-            {/* Map Content */}
-            <div className="relative h-[515px] bg-white border-t">
-              {/* Left Control Panel */}
-              <div className="absolute left-0 top-0 w-[46px] h-full bg-gray-300 flex flex-col items-center py-4 gap-4">
-                <button className="w-5 h-5 flex items-center justify-center">
-                  <svg width="20" height="21" viewBox="0 0 20 21" fill="none">
-                    <path
-                      d="M16.25 8.25V3.94922C16.25 3.69922 16.1523 3.46094 15.9766 3.28516L13.7109 1.02344C13.5352 0.847656 13.2969 0.75 13.0469 0.75H4.6875C4.17188 0.75 3.75 1.17188 3.75 1.6875V8.25C1.67969 8.25 0 9.92969 0 12V17.3125C0 17.8281 0.421875 18.25 0.9375 18.25H3.75V19.8125C3.75 20.3281 4.17188 20.75 4.6875 20.75H15.3125C15.8281 20.75 16.25 20.3281 16.25 19.8125V18.25H19.0625C19.5781 18.25 20 17.8281 20 17.3125V12C20 9.92969 18.3203 8.25 16.25 8.25ZM5 2H12.9219L15 4.07812V10.75H5V2ZM15 19.5H5V15.75H15V19.5ZM18.75 17H16.25V15.4375C16.25 14.9219 15.8281 14.5 15.3125 14.5H4.6875C4.17188 14.5 3.75 14.9219 3.75 15.4375V17H1.25V12C1.25 10.6211 2.37109 9.5 3.75 9.5V11.0625C3.75 11.5781 4.17188 12 4.6875 12H15.3125C15.8281 12 16.25 11.5781 16.25 11.0625V9.5C17.6289 9.5 18.75 10.6211 18.75 12V17ZM17.6562 12.625C17.6562 13.0547 17.3047 13.4062 16.875 13.4062C16.4453 13.4062 16.0938 13.0547 16.0938 12.625C16.0938 12.1953 16.4453 11.8438 16.875 11.8438C17.3047 11.8438 17.6562 12.1953 17.6562 12.625Z"
-                      fill="#333333"
-                    />
-                  </svg>
-                </button>
-                <button className="w-5 h-6 flex items-center justify-center">
-                  <svg width="21" height="24" viewBox="0 0 21 24" fill="none">
-                    <path
-                      d="M19.5908 8.87715H14.0191C13.4215 8.87715 12.9407 8.39637 12.9407 7.79876V2.22706C12.9407 1.9305 13.1834 1.68787 13.4799 1.68787H13.8394C14.1359 1.68787 14.3786 1.9305 14.3786 2.22706V7.43929H19.5908C19.8874 7.43929 20.13 7.68193 20.13 7.97849V8.33795C20.13 8.63451 19.8874 8.87715 19.5908 8.87715Z"
-                      fill="#333333"
-                    />
-                  </svg>
-                </button>
-                <div className="flex flex-col items-center">
-                  <div className="w-0.5 h-[100px] bg-gray-400 relative">
-                    <div className="w-7 h-7 bg-gray-400 rounded-sm absolute left-1/2 transform -translate-x-1/2 top-20 flex items-center justify-center">
-                      <span className="text-gray-700 text-xs">⊞</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Map Area */}
-              <div className="ml-[46px] mr-[234px] h-full bg-white border-t flex items-center justify-center">
-                <img
-                  src="https://api.builder.io/api/v1/image/assets/TEMP/44b7db769c47f01ea775afdbbe3d5679ed1d7400?width=1476"
-                  alt="Paseo Community Map"
-                  className="w-full h-full object-contain"
-                />
-              </div>
-
-              {/* Right Sidebar - Legend */}
-              <div className="absolute right-0 top-0 w-[234px] h-full bg-gray-200">
-                <div className="h-[42px] bg-brand-gold flex items-center justify-between px-3 border-t border-gray-300 border-opacity-25">
-                  <span className="text-gray-200 text-[14px] font-normal">
-                    Legend
-                  </span>
-                  <span className="text-white text-[14px]">⊞</span>
-                </div>
-                <div className="bg-gray-300 p-4 space-y-4">
-                  <div className="flex items-center gap-2">
-                    <div className="w-[18px] h-[18px] bg-blue-400 border border-gray-500"></div>
-                    <span className="text-gray-700 text-[14px]">Available</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <div className="w-[18px] h-[18px] bg-gray-500 border border-gray-500"></div>
-                    <span className="text-gray-700 text-[14px]">
-                      Future Available
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <div className="w-[18px] h-[18px] bg-green-400 border border-gray-500"></div>
-                    <span className="text-gray-700 text-[14px]">
-                      Quick Move-In
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <div className="w-[18px] h-[18px] bg-red-400 border border-gray-500"></div>
-                    <span className="text-gray-700 text-[14px]">Sold</span>
-                  </div>
-                </div>
-              </div>
-
-              {/* Map Location Pin */}
-              <div className="absolute top-3 left-3">
-                <div className="w-6 h-8 bg-red-600 rounded-t-full flex items-start justify-center pt-1">
-                  <span className="text-white text-sm">📍</span>
-                </div>
-              </div>
-
-              {/* Zoom Controls */}
-              <div className="absolute right-[234px] top-[140px] w-[26px] h-[36px] bg-gray-300 flex items-center justify-center">
-                <span className="text-gray-700 text-xl">⊞</span>
-              </div>
-            </div>
+          <div className="bg-gray-200 overflow-hidden min-h-[600px] relative">
+            {/* Interactive Map */}
+            <iframe
+              src="https://contradovip.com/choice-valley-homes/paseo/site/"
+              width="100%"
+              height="600"
+              style={{ border: "none", display: "block" }}
+            />
           </div>
         </div>
       </section>
@@ -497,7 +346,7 @@ export default function Homes() {
           <div className="text-center mb-8 lg:mb-12">
             <div className="mb-4 lg:mb-6 flex justify-center">
               <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/aea86c6f66b0c6fdf958cda26fe6470720b45b2e?width=216"
+                src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F0aacace864474c43bced7c92bb6907ae"
                 alt="Contact"
                 className="w-[80px] h-[80px] sm:w-[108px] sm:h-[108px] rounded-full border-3 border-brand-gold border-opacity-34"
               />
@@ -619,129 +468,18 @@ export default function Homes() {
           <div className="text-center space-y-6 lg:space-y-8">
             {/* Logo */}
             <div className="flex justify-center mb-6 lg:mb-8">
-              <svg
-                width="632"
-                height="93"
-                viewBox="0 0 634 94"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                className="w-[300px] h-[44px] sm:w-[500px] sm:h-[74px] lg:w-[632px] lg:h-[93px]"
-              >
-                <g clipPath="url(#clip0_1_122)">
-                  <mask
-                    id="mask0_1_122"
-                    style={{ maskType: "luminance" }}
-                    maskUnits="userSpaceOnUse"
-                    x="0"
-                    y="0"
-                    width="634"
-                    height="94"
-                  >
-                    <path
-                      d="M633.1 0.199219H0.910004V93.5909H633.1V0.199219Z"
-                      fill="white"
-                    />
-                  </mask>
-                  <g mask="url(#mask0_1_122)">
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M56.7932 0.199219L69.8371 10.2063V4.80922H83.4688V21.0116L111.196 42.7011C108.234 42.7011 105.205 42.4312 102.153 42.4312H96.592L56.6914 11.0721L26.0258 35.0215H30.1854V51.2578C43.7492 43.8255 70.7979 39.8115 89.4935 42.8585C64.994 44.6278 41.4403 52.9961 21.3576 67.0665V43.7356H0.910004L56.7932 0.199219Z"
-                      fill="#D29A3A"
-                    />
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M71.4761 51.8987C86.2337 46.9702 101.736 44.6118 117.299 44.9274C108.037 46.0731 98.9094 48.1179 90.0474 51.0329C62.1735 60.2528 40.5391 76.3879 30.3211 93.6022L15.3555 89.0259C26.6588 73.8242 46.5298 60.0055 71.4761 51.7974V51.8987Z"
-                      fill="#D29A3A"
-                    />
-                    <path
-                      d="M158.726 36.5284L154.453 40.5875C153.232 39.1765 151.725 38.0386 150.029 37.2479C148.334 36.4574 146.49 36.0321 144.62 35.9999C143.18 35.9802 141.751 36.2478 140.418 36.7867C139.084 37.3255 137.872 38.1248 136.854 39.1375C135.837 40.15 135.033 41.3552 134.491 42.6817C133.95 44.0085 133.681 45.4298 133.7 46.8615C133.672 48.8245 134.155 50.7613 135.102 52.4834C136.024 54.127 137.396 55.4761 139.058 56.3738C140.787 57.324 142.735 57.8122 144.71 57.7905C146.387 57.8128 148.048 57.4754 149.581 56.8011C151.396 55.8909 153.036 54.6734 154.43 53.203L158.578 57.5095C156.634 59.5085 154.335 61.1324 151.797 62.2993C149.502 63.2298 147.041 63.6851 144.563 63.6374C142.302 63.7194 140.048 63.343 137.937 62.5311C135.827 61.7193 133.905 60.489 132.288 58.9149C130.704 57.3248 129.464 55.4293 128.643 53.3449C127.823 51.2604 127.44 49.0312 127.518 46.7941C127.461 43.8182 128.211 40.882 129.688 38.2936C131.179 35.7742 133.332 33.7064 135.916 32.312C138.582 30.8191 141.594 30.044 144.653 30.0631C147.298 30.0614 149.913 30.629 152.317 31.7272C154.781 32.8427 156.968 34.4815 158.726 36.5284Z"
-                      fill="black"
-                    />
-                    <path
-                      d="M164.015 30.9062H170.221V42.9822H180.971V30.9062H187.153V62.8952H180.971V48.8741H170.232V62.8952H164.015V30.9062Z"
-                      fill="black"
-                    />
-                    <path
-                      d="M209.715 30.1079C211.905 30.0843 214.076 30.5083 216.093 31.3534C218.112 32.1987 219.934 33.4471 221.448 35.0214C223.04 36.5812 224.297 38.4473 225.141 40.5062C225.984 42.565 226.396 44.7734 226.353 46.9962C226.399 49.196 225.991 51.3816 225.158 53.4196C224.325 55.4574 223.08 57.3044 221.504 58.8472C218.339 61.9603 214.059 63.6951 209.607 63.6698C205.156 63.6444 200.898 61.8613 197.767 58.7123C195.208 56.062 193.577 52.6607 193.116 49.0142C192.656 45.3678 193.392 41.6708 195.212 38.4733C196.692 35.9384 198.814 33.8338 201.366 32.3698C203.919 30.9057 206.813 30.1336 209.76 30.1304L209.715 30.1079ZM209.646 36.0671C208.25 36.0344 206.86 36.2914 205.569 36.8219C204.275 37.3522 203.109 38.1444 202.142 39.1479C201.126 40.1876 200.334 41.4209 199.811 42.7736C199.288 44.1264 199.047 45.5705 199.102 47.0187C199.034 48.6181 199.346 50.2109 200.008 51.6694C200.672 53.1279 201.669 54.4117 202.922 55.4179C204.827 56.9892 207.228 57.8412 209.704 57.8241C211.099 57.8364 212.481 57.5587 213.761 57.0088C215.041 56.459 216.194 55.6491 217.141 54.6308C219.125 52.5431 220.231 49.7792 220.231 46.9063C220.231 44.0333 219.125 41.2693 217.141 39.1817C216.178 38.1729 215.014 37.3749 213.724 36.8387C212.434 36.3023 211.046 36.0397 209.646 36.0671Z"
-                      fill="black"
-                    />
-                    <path
-                      d="M231.688 30.9062H237.759V62.8952H231.688V30.9062Z"
-                      fill="black"
-                    />
-                    <path
-                      d="M274.2 36.5284L269.915 40.5875C268.697 39.1758 267.191 38.037 265.499 37.2464C263.806 36.4555 261.963 36.0308 260.094 35.9999C258.654 35.9802 257.226 36.2478 255.891 36.7867C254.558 37.3255 253.346 38.1248 252.328 39.1375C251.31 40.15 250.507 41.3552 249.966 42.6818C249.424 44.0085 249.155 45.4298 249.174 46.8615C249.147 48.8229 249.626 50.7584 250.565 52.4834C251.489 54.1248 252.861 55.4733 254.52 56.3738C256.25 57.3226 258.197 57.8106 260.173 57.7905C261.849 57.8142 263.51 57.4767 265.045 56.8011C266.858 55.8909 268.499 54.6734 269.892 53.203L274.042 57.5095C272.098 59.5096 269.799 61.1338 267.259 62.2993C264.964 63.2289 262.503 63.6841 260.026 63.6374C257.764 63.7213 255.509 63.3459 253.398 62.534C251.289 61.722 249.366 60.4905 247.75 58.915C245.198 56.1827 243.575 52.7218 243.108 49.0213C242.641 45.3209 243.356 41.5681 245.151 38.2936C246.639 35.7721 248.793 33.7035 251.378 32.312C254.04 30.819 257.049 30.0438 260.105 30.0631C262.75 30.0589 265.365 30.6267 267.767 31.7272C270.237 32.844 272.431 34.4824 274.2 36.5284Z"
-                      fill="black"
-                    />
-                    <path
-                      d="M279.569 30.9062H297.123V36.8656H285.65V42.6562H297.123V48.503H285.65V56.8796H297.123V62.8614H279.569V30.9062Z"
-                      fill="black"
-                    />
-                    <path
-                      d="M312.913 30.9062H319.209L327.303 53.6302L335.508 30.9062H341.793L330.173 62.8952H324.272L312.913 30.9062Z"
-                      fill="black"
-                    />
-                    <path
-                      d="M356.498 30.9062H362.715L375.082 62.8952H368.717L366.197 56.3062H353.084L350.52 62.8952H344.166L356.498 30.9062ZM359.64 39.3954L355.334 50.3695H363.936L359.64 39.3954Z"
-                      fill="black"
-                    />
-                    <path
-                      d="M379.806 30.9062H385.932V57.0821H394.839V62.8952H379.806V30.9062Z"
-                      fill="black"
-                    />
-                    <path
-                      d="M399.496 30.9062H405.622V57.0821H414.54V62.8952H399.496V30.9062Z"
-                      fill="black"
-                    />
-                    <path
-                      d="M419.209 30.9062H436.763V36.8656H425.291V42.6562H436.763V48.503H425.291V56.8796H436.763V62.8614H419.209V30.9062Z"
-                      fill="black"
-                    />
-                    <path
-                      d="M440.187 30.9062H446.755L452.756 42.42L458.725 30.9062H465.213L455.798 49.009V62.8614H449.637V49.009L440.187 30.9062Z"
-                      fill="black"
-                    />
-                    <path
-                      d="M482.948 30.906H486.158V44.3201H502.525V30.906H505.747V62.8948H502.525V47.457H486.158V62.8948H482.948V30.906Z"
-                      fill="black"
-                    />
-                    <path
-                      d="M528.873 30.1079C531.135 30.0495 533.385 30.449 535.488 31.282C537.59 32.1151 539.5 33.3642 541.103 34.9539C543.457 37.3156 545.056 40.3166 545.7 43.5797C546.343 46.8428 546.003 50.2223 544.721 53.2936C543.44 56.3649 541.273 58.9908 538.496 60.8411C535.718 62.6915 532.452 63.6838 529.11 63.6933C526.871 63.743 524.645 63.3368 522.569 62.4996C520.493 61.6623 518.61 60.4118 517.039 58.8247C515.455 57.2985 514.205 55.465 513.366 53.4378C512.526 51.4107 512.113 49.2333 512.155 47.0411C512.138 44.0442 512.918 41.0961 514.416 38.4957C515.853 35.9302 517.962 33.8007 520.52 32.3342C523.056 30.8661 525.94 30.0975 528.873 30.1079ZM529.02 33.2112C526.632 33.2076 524.289 33.8487 522.238 35.0664C520.154 36.25 518.427 37.9707 517.241 40.0475C516.034 42.1764 515.414 44.5855 515.445 47.0299C515.435 48.8073 515.78 50.5693 516.458 52.214C517.135 53.8588 518.133 55.3542 519.393 56.6143C520.654 57.8744 522.152 58.8742 523.802 59.5566C525.452 60.2388 527.221 60.5901 529.009 60.5899C531.438 60.6053 533.829 59.9809 535.937 58.7797C538.019 57.6182 539.738 55.9109 540.911 53.8436C542.105 51.7183 542.717 49.3183 542.685 46.8836C542.72 44.4701 542.108 42.091 540.911 39.9912C539.675 37.9453 537.931 36.2503 535.848 35.0687C533.763 33.8872 531.408 33.2592 529.009 33.2448L529.02 33.2112Z"
-                      fill="black"
-                    />
-                    <path
-                      d="M551.004 62.8948L555.616 30.906H556.137L569.203 57.1492L582.145 30.906H582.666L587.288 62.8948H584.134L580.959 40.0136L569.655 62.8838H568.829L557.323 39.8337L554.17 62.8838L551.004 62.8948Z"
-                      fill="black"
-                    />
-                    <path
-                      d="M593.63 30.906H612.054V34.0431H596.84V44.0613H611.917V47.1984H596.84V59.7579H611.917V62.8948H593.63V30.906Z"
-                      fill="black"
-                    />
-                    <path
-                      d="M614.279 56.9359L617.015 55.3055C618.938 58.8286 621.16 60.5901 623.685 60.5901C624.742 60.597 625.784 60.338 626.713 59.8368C627.614 59.3851 628.367 58.687 628.884 57.8242C629.372 57.0161 629.63 56.091 629.63 55.1481C629.593 54.0072 629.198 52.9064 628.499 51.9998C626.922 50.0363 625.068 48.3094 622.995 46.8726C621.157 45.617 619.476 44.1487 617.988 42.4987C616.887 41.1032 616.287 39.3816 616.281 37.6076C616.267 36.2738 616.614 34.9609 617.287 33.8073C617.958 32.6611 618.936 31.723 620.113 31.0975C621.328 30.4371 622.695 30.0965 624.08 30.1079C625.571 30.1038 627.038 30.4917 628.33 31.2324C629.992 32.3134 631.419 33.7169 632.524 35.3589L629.902 37.3378C629.061 36.1142 628.012 35.0451 626.804 34.1782C625.965 33.6777 625.002 33.417 624.024 33.4249C622.854 33.3682 621.709 33.7722 620.836 34.5494C620.438 34.9178 620.123 35.3655 619.91 35.8635C619.698 36.3613 619.594 36.8982 619.604 37.4391C619.604 38.1372 619.755 38.8271 620.045 39.4629C620.439 40.2665 620.979 40.9908 621.639 41.5991C622.057 42.004 623.448 43.0722 625.787 44.7926C627.991 46.2778 629.928 48.1212 631.518 50.2458C632.494 51.6658 633.031 53.3383 633.066 55.0582C633.071 56.1933 632.839 57.317 632.38 58.3569C631.923 59.3969 631.252 60.3299 630.41 61.0962C629.561 61.931 628.553 62.5879 627.443 63.0281C626.336 63.4685 625.149 63.6833 623.956 63.6599C622.068 63.6804 620.219 63.1402 618.643 62.1081C616.791 60.7594 615.294 58.9848 614.279 56.9359Z"
-                      fill="black"
-                    />
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M50.2599 22.7544H56.2506V28.7024H50.2599V22.7544ZM59.2121 31.5022H65.1915V37.4614H59.2121V31.5022ZM50.2599 31.5022H56.2506V37.4614H50.2599V31.5022ZM59.2121 22.7544H65.1915V28.7024H59.2121V22.7544Z"
-                      fill="#D29A3A"
-                    />
-                  </g>
-                </g>
-                <defs>
-                  <clipPath id="clip0_1_122">
-                    <rect
-                      width="632.19"
-                      height="93.3917"
-                      fill="white"
-                      transform="translate(0.910004 0.199219)"
-                    />
-                  </clipPath>
-                </defs>
-              </svg>
+              <img
+                loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F670681162c164c8fa4395680e72a5f95"
+                alt="Choice Valley Homes Logo"
+                className="w-[300px] h-[44px] sm:w-[500px] sm:h-[74px] lg:w-[632px] lg:h-[93px] object-cover object-center"
+                style={{
+                  aspectRatio: "6.76",
+                  minHeight: "20px",
+                  minWidth: "20px",
+                  overflow: "hidden",
+                }}
+              />
             </div>
 
             <h3 className="text-[20px] sm:text-[24px] lg:text-[30px] text-brand-medium-blue font-normal px-4">
@@ -812,7 +550,7 @@ export default function Homes() {
             {/* Equal Housing Logo */}
             <div className="flex justify-center">
               <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/2fa4e6a981c2976850756be421a86ccab0534b40?width=179"
+                src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fc1612309158a45dda0c4fb3b85d490a6"
                 alt="Equal Housing Opportunity"
                 className="w-[90px] h-[96px]"
               />

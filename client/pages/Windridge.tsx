@@ -9,7 +9,7 @@ import {
   Square,
   Mouse,
 } from "lucide-react";
-import Navigation from "../components/Navigation";
+import Header from "../components/Header";
 
 export default function Windridge() {
   const [activeElevation, setActiveElevation] = useState("A");
@@ -155,8 +155,10 @@ export default function Windridge() {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Header */}
-      <header className="bg-white shadow-lg relative z-50">
+      <Header />
+
+      {/* Remove this duplicate header section - keeping only for hero content below */}
+      <div style={{ display: "none" }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             {/* Logo */}
@@ -287,7 +289,7 @@ export default function Windridge() {
             </Link>
 
             {/* Navigation */}
-            <Navigation />
+            <Header />
 
             {/* View Listings Button */}
             <Link
@@ -299,7 +301,7 @@ export default function Windridge() {
             </Link>
           </div>
         </div>
-      </header>
+      </div>
 
       {/* Hero Section */}
       <section className="bg-gray-200 py-20">
@@ -493,25 +495,23 @@ export default function Windridge() {
       </section>
 
       {/* Join Interested List */}
-      <section className="py-16 bg-brand-gold">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col lg:flex-row items-center justify-between">
-            <div className="text-white mb-8 lg:mb-0">
-              <h2 className="text-3xl font-bold mb-4">
+      <section className="py-12">
+        <div className="max-w-[1290px] mx-auto px-4">
+          <div className="flex items-center bg-brand-gold rounded-lg gap-6 justify-between p-8">
+            <div className="text-left">
+              <h2 className="text-white text-[32px] font-bold leading-[35px] mb-4">
                 Join the
                 <br />
                 Interested List
               </h2>
-              <p className="text-lg">
+              <p className="text-white leading-[26.4px] max-w-[540px]">
                 Sign-up to stay in the loop with new home releases, builder
-                incentives,
-                <br />
-                special events & more!
+                incentives, special events & more!
               </p>
             </div>
             <Link
-              to="/contact"
-              className="bg-white text-black px-8 py-4 rounded text-lg font-medium hover:bg-gray-100 transition-colors"
+              to="/register"
+              className="bg-white text-black text-lg leading-[27px] transition-all duration-150 ease-in-out py-4 px-10"
             >
               Register
             </Link>
@@ -665,7 +665,7 @@ export default function Windridge() {
                 <br />
                 <span>Tuesday – Saturday 10am – 5pm</span>
                 <br />
-                <span>Sunday – 11am – 4pm</span>
+                <span>Sunday – 11am �� 4pm</span>
               </p>
             </div>
 
