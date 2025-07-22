@@ -4,8 +4,8 @@ import {
   ChevronDown,
   Phone,
   MessageSquare,
+  Instagram,
   Home,
-  ExternalLink,
   Bed,
   Bath,
   Car,
@@ -22,6 +22,32 @@ export default function Listings() {
     bathrooms: "",
     homeType: "",
   });
+
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    message: "",
+    termsAccepted: false,
+  });
+
+  const handleInputChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+  ) => {
+    const { name, value, type } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]:
+        type === "checkbox" ? (e.target as HTMLInputElement).checked : value,
+    }));
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    // Handle form submission logic here
+    console.log("Form submitted:", formData);
+  };
 
   const listings = [
     {
@@ -296,26 +322,218 @@ export default function Listings() {
             <h2 className="text-[28px] lg:text-[35px] font-bold text-brand-dark-blue mb-4">
               Ready to Make Paseo Your Home?
             </h2>
-            <p className="text-[16px] text-brand-medium-blue mb-8">
-              Schedule a tour or contact our sales team to learn more about
-              available homes and financing options.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                to="/contact"
-                className="bg-brand-gold text-white px-8 py-3 rounded-sm text-[15px] font-medium hover:bg-opacity-90 transition-colors"
-              >
-                Schedule Tour
-              </Link>
-              <Link
-                to="/register"
-                className="border-2 border-brand-gold text-brand-gold px-8 py-3 rounded-sm text-[15px] font-medium hover:bg-brand-gold hover:text-white transition-colors"
-              >
-                Join Interest List
-              </Link>
-            </div>
+
+            {/* Contact Form */}
+            <form onSubmit={handleSubmit} className="space-y-6">
+              {/* First Row - First Name & Last Name */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="px-[5px]">
+                  <label className="block text-[#3A4F66] text-[15px] font-normal leading-[24.75px] mb-2">
+                    First Name
+                  </label>
+                  <input
+                    type="text"
+                    name="firstName"
+                    value={formData.firstName}
+                    onChange={handleInputChange}
+                    className="w-full h-[40px] bg-white border-0 border-b border-[#69727D] rounded-[3px] px-3 focus:outline-none focus:border-[#D29A3A]"
+                  />
+                </div>
+                <div className="px-[5px]">
+                  <label className="block text-[#3A4F66] text-[15px] font-normal leading-[24.75px] mb-2">
+                    Last Name
+                  </label>
+                  <input
+                    type="text"
+                    name="lastName"
+                    value={formData.lastName}
+                    onChange={handleInputChange}
+                    className="w-full h-[40px] bg-white border-0 border-b border-[#69727D] rounded-[3px] px-3 focus:outline-none focus:border-[#D29A3A]"
+                  />
+                </div>
+              </div>
+
+              {/* Second Row - Email & Phone */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="px-[5px]">
+                  <label className="block text-[#3A4F66] text-[15px] font-normal leading-[24.75px] mb-2">
+                    Email
+                  </label>
+                  <input
+                    type="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleInputChange}
+                    className="w-full h-[40px] bg-white border-0 border-b border-[#69727D] rounded-[3px] px-3 focus:outline-none focus:border-[#D29A3A]"
+                  />
+                </div>
+                <div className="px-[5px]">
+                  <label className="block text-[#3A4F66] text-[15px] font-normal leading-[24.75px] mb-2">
+                    Phone Number
+                  </label>
+                  <input
+                    type="tel"
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleInputChange}
+                    className="w-full h-[40px] bg-white border-0 border-b border-[#69727D] rounded-[3px] px-3 focus:outline-none focus:border-[#D29A3A]"
+                  />
+                </div>
+              </div>
+
+              {/* Message Field */}
+              <div className="px-[5px]">
+                <label className="block text-[#3A4F66] text-[15px] font-normal leading-[24.75px] mb-2">
+                  How can we help you?
+                </label>
+                <textarea
+                  name="message"
+                  value={formData.message}
+                  onChange={handleInputChange}
+                  rows={6}
+                  className="w-full h-[170px] bg-white border-0 border-b border-[#69727D] rounded-[3px] px-3 py-2 resize-none focus:outline-none focus:border-[#D29A3A]"
+                />
+              </div>
+
+              {/* Terms & Conditions */}
+              <div className="px-[5px] space-y-4">
+                <label className="block text-[#3A4F66] text-[15px] font-normal leading-[24.75px]">
+                  Accept Terms of Contacting
+                </label>
+                <div className="flex items-start gap-3">
+                  <input
+                    type="checkbox"
+                    name="termsAccepted"
+                    checked={formData.termsAccepted}
+                    onChange={handleInputChange}
+                    className="w-[13px] h-[13px] bg-[#0075FF] rounded-[2.5px] border-0 mt-1 flex-shrink-0"
+                  />
+                  <div className="text-[#3A4F66] text-[15px] font-normal leading-[24.75px]">
+                    <p className="mb-1">
+                      By pressing the Submit button, I agree to Choice Valley
+                      contacting me by email and/or phone to share home
+                      availability information or related opportunities. I also
+                    </p>
+                    <p>
+                      understand that any information I've shared in this form
+                      is subject to Choice Valley Homes' Privacy Policy.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Submit Button */}
+              <div className="px-[5px]">
+                <button
+                  type="submit"
+                  className="w-[362px] h-[40px] bg-[#69727D] text-white rounded-[3px] text-[15px] font-medium hover:bg-opacity-90 transition-colors flex items-center justify-center"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
           </div>
         </section>
+
+        {/* Footer */}
+        <footer className="bg-[#F2F4F7] py-16">
+          <div className="max-w-[1270px] mx-auto px-4">
+            <div className="text-center">
+              {/* Logo */}
+              <div className="flex justify-center mb-8">
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F670681162c164c8fa4395680e72a5f95"
+                  alt="Choice Valley Homes Logo"
+                  className="w-[400px] h-[59px] sm:w-[600px] sm:h-[88px] lg:w-[719px] lg:h-[106px] object-cover object-center"
+                  style={{
+                    aspectRatio: "6.76",
+                    minHeight: "20px",
+                    minWidth: "20px",
+                    overflow: "hidden",
+                  }}
+                />
+              </div>
+
+              <h3 className="text-[#3A4F66] text-[30px] leading-[49.5px] mt-8 px-4">
+                Building communities throughout the Central Valley
+              </h3>
+              <p className="text-[#3A4F66] mt-8">
+                For More Information about PASEO, Please Call or Text
+              </p>
+              <div className="mt-8">
+                <p className="text-[#3A4F66] text-lg leading-[29.7px]">
+                  <span>Stephanie Stine</span>
+                  <br />
+                  <span>Community Sales Manager</span>
+                  <br />
+                  <span>209-308-9000</span>
+                  <br />
+                  <span>DRE# 02189834</span>
+                </p>
+              </div>
+              <div className="mt-8">
+                <p className="text-[#3A4F66] text-lg leading-[29.7px]">
+                  <span>Hours</span>
+                  <br />
+                  <span>Monday – Closed</span>
+                  <br />
+                  <span>Tuesday – Saturday 10am – 5pm</span>
+                  <br />
+                  <span>Sunday – 11am – 4pm</span>
+                </p>
+              </div>
+              <p className="text-[#3A4F66] text-lg leading-[29.7px] mt-8">
+                154 Montage Drive, Merced, CA 95348
+              </p>
+
+              <div className="flex justify-center items-center gap-4 mt-8">
+                <a
+                  href="tel:209-308-9000"
+                  className="flex items-center gap-2 text-black text-lg font-bold"
+                >
+                  <Phone className="w-5 h-5 text-[#D29A3A]" />
+                  <span>209-308-9000</span>
+                </a>
+                <span className="text-gray-300">|</span>
+                <a
+                  href="#"
+                  className="flex items-center gap-2 text-black text-xl font-bold"
+                >
+                  <MessageSquare className="w-5 h-5 text-[#D29A3A]" />
+                  <span>Send Message</span>
+                </a>
+              </div>
+
+              <div className="flex justify-center mt-8">
+                <a
+                  href="https://www.instagram.com/choicevalleyhomes/?hl=en"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center w-12 h-12 bg-gray-800 rounded-full"
+                >
+                  <Instagram className="w-6 h-6 text-white" />
+                </a>
+              </div>
+            </div>
+
+            <div className="flex justify-center mt-8">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fc1612309158a45dda0c4fb3b85d490a6"
+                alt="Equal Housing Opportunity"
+                className="w-[102px] h-[109px]"
+              />
+            </div>
+
+            <div className="flex justify-center items-center gap-2 mt-8 text-black">
+              <span>® All Rights Reserved</span>
+              <span className="text-gray-300">|</span>
+              <a href="#" className="hover:text-brand-gold transition-colors">
+                Privacy Policy
+              </a>
+            </div>
+          </div>
+        </footer>
       </main>
     </div>
   );

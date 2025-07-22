@@ -1,13 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import {
-  Home,
-  Phone,
-  MessageSquare,
-  ExternalLink,
-  X,
-  ZoomIn,
-} from "lucide-react";
+import { Home, Phone, MessageSquare, Instagram, X, ZoomIn } from "lucide-react";
 import Header from "../components/Header";
 
 export default function Community() {
@@ -404,10 +397,12 @@ export default function Community() {
             {/* Social Media */}
             <div className="flex justify-center">
               <a
-                href="#"
+                href="https://www.instagram.com/choicevalleyhomes/?hl=en"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center"
               >
-                <ExternalLink className="w-6 h-6 text-white" />
+                <Instagram className="w-6 h-6 text-white" />
               </a>
             </div>
 

@@ -1,8 +1,7 @@
 import { defineConfig, Plugin } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
-import { createServer } from "./server/createServer";
-import { componentTagger } from "lovable-tagger";
+import { createServer } from "./server";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
@@ -13,11 +12,7 @@ export default defineConfig(({ mode }) => ({
   build: {
     outDir: "dist/spa",
   },
-  plugins: [
-    react(),
-    mode === 'development' && componentTagger(),
-    expressPlugin()
-  ].filter(Boolean),
+  plugins: [react(), expressPlugin()],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./client"),

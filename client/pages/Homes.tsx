@@ -4,7 +4,7 @@ import {
   Phone,
   MessageSquare,
   Home,
-  ExternalLink,
+  Instagram,
   Bed,
   Bath,
   Square,
@@ -180,13 +180,78 @@ export default function Homes() {
             </Link>
             <Link
               to="/listings"
-              className="border-2 border-brand-gold text-brand-gold px-8 py-3 rounded-sm text-[15px] font-medium hover:bg-brand-gold hover:text-white transition-colors"
+              className="border-2 border-brand-gold text-brand-gold px-8 py-3 rounded-sm text-[15px] font-medium hover:bg-opacity-90 transition-colors"
             >
               View Available Homes
             </Link>
           </div>
         </div>
       </section>
+
+      {/* Footer */}
+      <footer className="bg-brand-light-gray py-12 lg:py-16">
+        <div className="max-w-[1140px] mx-auto px-4">
+          <div className="text-center space-y-8">
+            {/* Company Logo */}
+            <div className="flex justify-center">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fc4fda5d5de5e4c6b86b95cf3a4a5b4c9"
+                alt="Choice Valley Homes"
+                className="h-[60px] lg:h-[80px]"
+              />
+            </div>
+
+            {/* Contact & Message Links */}
+            <div className="flex flex-col sm:flex-row justify-center items-center gap-4 lg:gap-8">
+              <a
+                href="tel:+12093089000"
+                className="flex items-center gap-2 text-black font-bold text-[16px] lg:text-[21px]"
+              >
+                <Phone className="w-4 h-4 lg:w-5 lg:h-5 text-brand-gold" />
+                209-308-9000
+              </a>
+              <span className="hidden sm:inline text-gray-300">|</span>
+              <a
+                href="#"
+                className="flex items-center gap-2 text-black font-bold text-[16px] lg:text-[21px]"
+              >
+                <MessageSquare className="w-4 h-4 lg:w-5 lg:h-5 text-brand-gold" />
+                Send Message
+              </a>
+            </div>
+
+            {/* Social Media */}
+            <div className="flex justify-center">
+              <a
+                href="https://www.instagram.com/choicevalleyhomes/?hl=en"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center"
+              >
+                <Instagram className="w-6 h-6 text-white" />
+              </a>
+            </div>
+
+            {/* Equal Housing Logo */}
+            <div className="flex justify-center">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fc1612309158a45dda0c4fb3b85d490a6"
+                alt="Equal Housing Opportunity"
+                className="w-[90px] h-[96px]"
+              />
+            </div>
+
+            {/* Footer Bottom */}
+            <div className="flex flex-col sm:flex-row justify-center items-center gap-2 text-[14px] lg:text-[16px] text-black">
+              <span>® All Rights Reserved</span>
+              <span className="hidden sm:inline text-gray-300">|</span>
+              <a href="#" className="hover:text-brand-gold transition-colors">
+                Privacy Policy
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }

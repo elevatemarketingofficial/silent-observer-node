@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Home } from "lucide-react";
+import { Home, Instagram } from "lucide-react";
 import Header from "../components/Header";
 
 export default function Register() {
@@ -20,30 +20,32 @@ export default function Register() {
       id: "1691",
       name: "1691",
       image:
-        "https://api.builder.io/api/v1/image/assets/TEMP/1c15f03cde79434616e878a1ca5ea11dcf3bf138?width=400",
+        "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fa8dea5c3b40e4e3eb3f535032c1dee78",
     },
     {
       id: "1724",
       name: "1724",
       image:
-        "https://api.builder.io/api/v1/image/assets/TEMP/4dd70e36ddd2d2e5f03811954d0ab82c390815d2?width=400",
+        "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fdd4d622210c34a53af776acadfd5ab9a",
     },
     {
       id: "1794",
       name: "1794",
       image:
-        "https://api.builder.io/api/v1/image/assets/TEMP/717885aed07a142a4d98a0b9821420926e5452cd?width=400",
+        "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fa732e5f5f52842c7844bf2d1af96c10f",
     },
     {
       id: "1874",
       name: "1874",
       image:
-        "https://api.builder.io/api/v1/image/assets/TEMP/2f4b03399c084d7ddddcb8d1fd0163459de6b9ea?width=400",
+        "https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F40fc77d7611544d2aac4f5cffe681626",
     },
   ];
 
   const handleInputChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>,
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >,
   ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
@@ -63,60 +65,67 @@ export default function Register() {
 
       {/* Hero Section */}
       <section
-        className="relative h-[496px] w-full"
+        className="relative h-[400px] sm:h-[500px] lg:h-[690px] flex items-center justify-center overflow-hidden"
         style={{
-          backgroundImage:
-            "url('https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F11df0f1a4b66417c8ae95d480b3d7ec4')",
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "center",
-          backgroundSize: "cover",
+          background:
+            "url('https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Ff6b9bad3bd5743f58ef87414df684e73') lightgray 0px 0px / 100% 156.522% no-repeat",
         }}
       >
         {/* Background overlay */}
-        <div className="absolute inset-0 bg-black bg-opacity-30"></div>
+        <div className="absolute inset-0 bg-black opacity-40"></div>
 
         {/* Content */}
-        <div className="relative z-10 text-center text-white h-full flex items-center justify-center">
-          <h1 className="text-[36px] sm:text-[50px] lg:text-[67px] font-bold leading-tight">
-            JOIN THE INTEREST LIST
+        <div className="relative z-10 text-center text-white max-w-4xl px-4">
+          <h1 className="text-[36px] sm:text-[50px] lg:text-[67px] font-bold leading-tight mb-6">
+            Register Your Interest
           </h1>
+          <p className="text-[16px] sm:text-[18px] lg:text-[20px] leading-relaxed">
+            Stay in the know about upcoming events, exclusive new home releases,
+            builder incentives, and more.
+          </p>
         </div>
       </section>
 
       {/* Registration Form Section */}
-      <section className="bg-white py-16">
-        <div className="max-w-[1200px] mx-auto px-4">
+      <section className="py-12 sm:py-16 lg:py-20 bg-white">
+        <div className="max-w-[800px] mx-auto px-4">
           <form onSubmit={handleSubmit} className="space-y-8">
             {/* Model Selection */}
             <div>
-              <h2 className="text-[24px] font-bold text-brand-dark-blue mb-6">
-                Which Home Model Interests You?
-              </h2>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              <label className="block text-[18px] font-bold text-brand-dark-blue mb-6">
+                What model are you interested in?{" "}
+                <span className="text-red-500">*</span>
+              </label>
+
+              {/* Model Options Grid */}
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
                 {models.map((model) => (
-                  <div
+                  <button
                     key={model.id}
-                    className={`cursor-pointer border-2 rounded-lg p-4 transition-colors ${
+                    type="button"
+                    onClick={() => setSelectedModel(model.id)}
+                    className={`p-4 border-2 rounded-lg transition-colors ${
                       selectedModel === model.id
-                        ? "border-brand-gold bg-brand-gold/10"
+                        ? "border-brand-gold bg-brand-gold bg-opacity-10"
                         : "border-gray-300 hover:border-brand-gold"
                     }`}
-                    onClick={() => setSelectedModel(model.id)}
                   >
                     <img
                       src={model.image}
                       alt={model.name}
-                      className="w-full h-32 object-cover rounded mb-2"
+                      className="w-full h-24 object-cover rounded mb-2"
                     />
-                    <p className="text-center font-medium">{model.name}</p>
-                  </div>
+                    <span className="text-[16px] font-medium text-brand-dark-blue">
+                      {model.name}
+                    </span>
+                  </button>
                 ))}
               </div>
             </div>
 
             {/* Description */}
             <div>
-              <label className="block text-[15px] text-brand-medium-blue mb-2">
+              <label className="block text-[16px] font-medium text-brand-dark-blue mb-2">
                 Tell us more about your interest
               </label>
               <textarea
@@ -124,16 +133,16 @@ export default function Register() {
                 value={formData.description}
                 onChange={handleInputChange}
                 rows={4}
-                className="w-full bg-white border border-gray-300 rounded-sm px-3 py-2 focus:outline-none focus:border-brand-gold resize-none"
-                placeholder="What draws you to this community? Any specific features you're looking for?"
+                className="w-full p-3 border border-gray-300 rounded-sm focus:outline-none focus:border-brand-gold"
+                placeholder="Share any specific questions or requirements..."
               />
             </div>
 
             {/* Contact Information */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               <div>
-                <label className="block text-[15px] text-brand-medium-blue mb-2">
-                  First Name *
+                <label className="block text-[16px] font-medium text-brand-dark-blue mb-2">
+                  First Name <span className="text-red-500">*</span>
                 </label>
                 <input
                   type="text"
@@ -141,12 +150,13 @@ export default function Register() {
                   value={formData.firstName}
                   onChange={handleInputChange}
                   required
-                  className="w-full h-10 bg-white border border-gray-300 rounded-sm px-3 focus:outline-none focus:border-brand-gold"
+                  className="w-full p-3 border border-gray-300 rounded-sm focus:outline-none focus:border-brand-gold"
                 />
               </div>
+
               <div>
-                <label className="block text-[15px] text-brand-medium-blue mb-2">
-                  Last Name *
+                <label className="block text-[16px] font-medium text-brand-dark-blue mb-2">
+                  Last Name <span className="text-red-500">*</span>
                 </label>
                 <input
                   type="text"
@@ -154,15 +164,13 @@ export default function Register() {
                   value={formData.lastName}
                   onChange={handleInputChange}
                   required
-                  className="w-full h-10 bg-white border border-gray-300 rounded-sm px-3 focus:outline-none focus:border-brand-gold"
+                  className="w-full p-3 border border-gray-300 rounded-sm focus:outline-none focus:border-brand-gold"
                 />
               </div>
-            </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
-                <label className="block text-[15px] text-brand-medium-blue mb-2">
-                  Email *
+                <label className="block text-[16px] font-medium text-brand-dark-blue mb-2">
+                  Email <span className="text-red-500">*</span>
                 </label>
                 <input
                   type="email"
@@ -170,12 +178,13 @@ export default function Register() {
                   value={formData.email}
                   onChange={handleInputChange}
                   required
-                  className="w-full h-10 bg-white border border-gray-300 rounded-sm px-3 focus:outline-none focus:border-brand-gold"
+                  className="w-full p-3 border border-gray-300 rounded-sm focus:outline-none focus:border-brand-gold"
                 />
               </div>
+
               <div>
-                <label className="block text-[15px] text-brand-medium-blue mb-2">
-                  Mobile Phone *
+                <label className="block text-[16px] font-medium text-brand-dark-blue mb-2">
+                  Mobile Phone <span className="text-red-500">*</span>
                 </label>
                 <input
                   type="tel"
@@ -183,14 +192,12 @@ export default function Register() {
                   value={formData.mobile}
                   onChange={handleInputChange}
                   required
-                  className="w-full h-10 bg-white border border-gray-300 rounded-sm px-3 focus:outline-none focus:border-brand-gold"
+                  className="w-full p-3 border border-gray-300 rounded-sm focus:outline-none focus:border-brand-gold"
                 />
               </div>
-            </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
-                <label className="block text-[15px] text-brand-medium-blue mb-2">
+                <label className="block text-[16px] font-medium text-brand-dark-blue mb-2">
                   Zip Code
                 </label>
                 <input
@@ -198,24 +205,25 @@ export default function Register() {
                   name="zipCode"
                   value={formData.zipCode}
                   onChange={handleInputChange}
-                  className="w-full h-10 bg-white border border-gray-300 rounded-sm px-3 focus:outline-none focus:border-brand-gold"
+                  className="w-full p-3 border border-gray-300 rounded-sm focus:outline-none focus:border-brand-gold"
                 />
               </div>
+
               <div>
-                <label className="block text-[15px] text-brand-medium-blue mb-2">
+                <label className="block text-[16px] font-medium text-brand-dark-blue mb-2">
                   Timeframe for Purchase
                 </label>
                 <select
                   name="timeframe"
                   value={formData.timeframe}
                   onChange={handleInputChange}
-                  className="w-full h-10 bg-white border border-gray-300 rounded-sm px-3 focus:outline-none focus:border-brand-gold"
+                  className="w-full p-3 border border-gray-300 rounded-sm focus:outline-none focus:border-brand-gold"
                 >
-                  <option value="">Select timeframe...</option>
+                  <option value="">When are you looking to buy?</option>
                   <option value="immediate">Immediate (0-3 months)</option>
-                  <option value="short">Short-term (3-6 months)</option>
-                  <option value="medium">Medium-term (6-12 months)</option>
-                  <option value="long">Long-term (12+ months)</option>
+                  <option value="short-term">Short-term (3-6 months)</option>
+                  <option value="medium-term">Medium-term (6-12 months)</option>
+                  <option value="long-term">Long-term (12+ months)</option>
                 </select>
               </div>
             </div>
@@ -224,14 +232,85 @@ export default function Register() {
             <div className="text-center">
               <button
                 type="submit"
-                className="bg-brand-gold text-white px-12 py-3 text-[15px] font-medium rounded-sm hover:bg-opacity-90 transition-colors"
+                className="bg-brand-gold text-white px-12 py-4 rounded-sm text-[16px] font-medium hover:bg-opacity-90 transition-colors"
               >
-                Join Interest List
+                Submit Form
               </button>
             </div>
           </form>
         </div>
       </section>
+
+      {/* Footer Section */}
+      <footer className="bg-brand-light-gray py-12 lg:py-16">
+        <div className="max-w-[1140px] mx-auto px-4">
+          <div className="text-center space-y-8">
+            {/* Logo */}
+            <div className="flex justify-center">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fc4fda5d5de5e4c6b86b95cf3a4a5b4c9"
+                alt="Choice Valley Homes"
+                className="h-[60px] lg:h-[80px]"
+              />
+            </div>
+
+            <h3 className="text-[#3A4F66] text-[24px] lg:text-[30px] leading-tight px-4">
+              Building communities throughout the Central Valley
+            </h3>
+
+            <p className="text-[#3A4F66] text-[16px]">
+              For More Information about PASEO, Please Call or Text
+            </p>
+
+            <div className="space-y-4">
+              <div className="text-[#3A4F66] text-[16px] lg:text-[18px]">
+                <div className="font-bold">Stephanie Stine</div>
+                <div>Community Sales Manager</div>
+                <div>209-308-9000</div>
+                <div>DRE# 02189834</div>
+              </div>
+
+              <div className="text-[#3A4F66] text-[16px]">
+                <div className="font-bold">Hours</div>
+                <div>Monday – Closed</div>
+                <div>Tuesday – Saturday 10am – 5pm</div>
+                <div>Sunday – 11am – 4pm</div>
+              </div>
+            </div>
+
+            <p className="text-[#3A4F66] text-[16px]">
+              154 Montage Drive, Merced, CA 95348
+            </p>
+
+            <div className="flex justify-center mb-8">
+              <a
+                href="https://www.instagram.com/choicevalleyhomes/?hl=en"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center w-12 h-12 bg-gray-800 rounded-full text-white"
+              >
+                <Instagram className="w-6 h-6" />
+              </a>
+            </div>
+
+            <div className="flex justify-center mb-8">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fc1612309158a45dda0c4fb3b85d490a6"
+                alt="Equal Housing Opportunity"
+                className="w-20 h-24"
+              />
+            </div>
+
+            <div className="flex flex-col sm:flex-row justify-center items-center gap-2 text-[14px] lg:text-[16px] text-black">
+              <span>® All Rights Reserved</span>
+              <span className="hidden sm:inline text-gray-300">|</span>
+              <a href="#" className="hover:text-brand-gold transition-colors">
+                Privacy Policy
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
