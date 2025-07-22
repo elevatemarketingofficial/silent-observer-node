@@ -27,7 +27,7 @@ jobs:
         with:
           repository: elevatemarketingofficial/silent-observer-node
           path: lovable
-          token: ${{ secrets.LOVABLE_PAT }}
+          token: '${{ secrets.LOVABLE_PAT }}'
 
       # ——— 4. Sync Builder files into Lovable repo ———
       - name: Sync Builder → Lovable
