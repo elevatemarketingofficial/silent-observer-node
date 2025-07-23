@@ -4,7 +4,7 @@ import {
   Phone,
   MessageSquare,
   Home,
-  ExternalLink,
+  Instagram,
 } from "lucide-react";
 import Header from "../components/Header";
 
@@ -90,9 +90,14 @@ export default function HomeownerServiceRequest() {
 
             {/* CTA Button */}
             <div className="mt-8 lg:mt-12">
-              <button className="bg-brand-dark-blue text-white px-6 py-3 rounded-sm text-[15px] font-normal hover:bg-opacity-90 transition-colors">
+              <a
+                href="https://rbgcorporation.com/warranty-request"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-brand-dark-blue text-white px-6 py-3 rounded-sm text-[15px] font-normal hover:bg-opacity-90 transition-colors"
+              >
                 Click Here to Fill Out Our Warranty and Repair Form
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -287,10 +292,12 @@ export default function HomeownerServiceRequest() {
             {/* Social Media */}
             <div className="flex justify-center">
               <a
-                href="#"
+                href="https://www.instagram.com/choicevalleyhomes/?hl=en"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center"
               >
-                <ExternalLink className="w-6 h-6 text-white" />
+                <Instagram className="w-6 h-6 text-white" />
               </a>
             </div>
 

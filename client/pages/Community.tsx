@@ -1,13 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import {
-  Home,
-  Phone,
-  MessageSquare,
-  ExternalLink,
-  X,
-  ZoomIn,
-} from "lucide-react";
+import { Home, Phone, MessageSquare, Instagram, X, ZoomIn } from "lucide-react";
 import Header from "../components/Header";
 
 export default function Community() {
@@ -40,12 +33,6 @@ export default function Community() {
 
   return (
     <div className="min-h-screen bg-[#FAFBFC]">
-      <style>{`
-        @keyframes heroZoom {
-          0% { background-size: 110%; }
-          100% { background-size: 115%; }
-        }
-      `}</style>
       <Header />
 
       {/* Main Content */}
@@ -54,43 +41,34 @@ export default function Community() {
         <section
           className="relative h-[690px] flex items-center justify-center bg-cover bg-center bg-no-repeat overflow-hidden"
           style={{
-            backgroundImage: `url(https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fea115177b4a7470595ac9b3a35fb6278)`,
-            animation: "heroZoom 20s ease-in-out infinite alternate",
+            backgroundImage: `url(https://api.builder.io/api/v1/image/assets/TEMP/6d33231cf6eb6e2d174497ac6fb6be7a67ba6b2e?width=3840)`,
           }}
         >
+          {/* Background overlay */}
+          <div className="absolute inset-0 bg-black opacity-40"></div>
           {/* Content */}
           <div className="relative z-10 text-center text-white">
-            <h1 className="text-[36px] sm:text-[50px] lg:text-[67px] font-bold leading-tight text-white">
+            <h1 className="text-[64px] font-bold leading-[68px] text-white">
               COMMUNITY
             </h1>
           </div>
-          {/* Background overlay */}
-          <div className="absolute inset-0 bg-black opacity-40"></div>
         </section>
 
         {/* Community Map Section */}
-        <section className="py-8 sm:py-12 lg:py-16 bg-white">
+        <section className="py-10 bg-white">
           <div className="max-w-[1140px] mx-auto px-4">
-            <div className="text-center mb-8">
-              <h2 className="text-[24px] sm:text-[30px] lg:text-[35px] font-bold text-brand-dark-blue mb-4">
-                Explore the Community
-              </h2>
-            </div>
             <div className="relative mb-8">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F1b43864218d3427b87d8535f26c560e0"
+                src="https://api.builder.io/api/v1/image/assets/TEMP/ee5a4d5fe183228eb253a4eccdd29dc9ad81de57?width=2240"
                 alt="Community Map"
-                className="w-full h-auto rounded-lg shadow-lg cursor-pointer"
+                className="w-full h-auto cursor-pointer"
                 onClick={() => setLightboxOpen(true)}
               />
-              <div
-                className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30 rounded-lg cursor-pointer"
-                onClick={() => setLightboxOpen(true)}
-              >
-                <div className="text-white text-center">
-                  <ZoomIn className="w-12 h-12 mx-auto mb-2" />
-                  <p className="text-lg font-medium">Click to enlarge</p>
-                </div>
+              <div className="flex items-center gap-2 mt-3">
+                <ZoomIn className="w-4 h-4 text-brand-medium-blue" />
+                <span className="text-[16px] text-brand-medium-blue">
+                  Click to enlarge
+                </span>
               </div>
             </div>
           </div>
@@ -110,7 +88,7 @@ export default function Community() {
                 <X className="w-8 h-8" />
               </button>
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F1b43864218d3427b87d8535f26c560e0"
+                src="https://api.builder.io/api/v1/image/assets/TEMP/ee5a4d5fe183228eb253a4eccdd29dc9ad81de57?width=2240"
                 alt="Community Map - Enlarged"
                 className="max-w-full max-h-full object-contain"
                 onClick={(e) => e.stopPropagation()}
@@ -120,21 +98,14 @@ export default function Community() {
         )}
 
         {/* UC Merced Section */}
-        <section className="py-8 sm:py-12 lg:py-16 bg-brand-light-gray">
+        <section className="py-[100px] bg-brand-light-gray">
           <div className="max-w-[1140px] mx-auto px-4">
-            <div className="flex flex-col lg:flex-row items-center gap-6 lg:gap-8">
-              <div className="lg:w-1/2">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F7903484f28194fc6b6723d0e5763fe2a"
-                  alt="UC Merced"
-                  className="w-full h-auto rounded-lg"
-                />
-              </div>
-              <div className="lg:w-1/2">
-                <h2 className="text-[24px] sm:text-[30px] lg:text-[35px] font-bold text-brand-dark-blue leading-tight mb-4 lg:mb-6">
+            <div className="flex items-center gap-5">
+              <div className="w-[456px] bg-white p-10">
+                <h2 className="text-[35px] font-bold text-brand-dark-blue leading-[35px] mb-6">
                   UC Merced
                 </h2>
-                <p className="text-[14px] sm:text-[15px] lg:text-[16px] text-brand-medium-blue leading-relaxed">
+                <p className="text-[16px] text-brand-medium-blue leading-[26.4px]">
                   UC Merced is the first American research university
                   established in the 21st century. UC Merced has upheld their
                   legacy for innovative, interdisciplinary research. From
@@ -143,30 +114,37 @@ export default function Community() {
                   leadership programs are bounded by student success.
                 </p>
               </div>
+              <div className="flex-1">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F3deed1448ba5498a8ccd42e894c804ec"
+                  alt="UC Merced"
+                  className="w-full h-auto"
+                />
+              </div>
             </div>
           </div>
         </section>
 
         {/* Outdoor Section */}
-        <section className="py-8 sm:py-12 lg:py-16 bg-white">
+        <section className="py-[100px] bg-brand-light-gray">
           <div className="max-w-[1140px] mx-auto px-4">
-            <div className="flex flex-col lg:flex-row-reverse items-center gap-6 lg:gap-8">
-              <div className="lg:w-1/2">
+            <div className="flex items-center gap-5">
+              <div className="flex-1">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Ff6b9bad3bd5743f58ef87414df684e73"
+                  src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2Fb31d7c8068674e72940bd2944e9c5253"
                   alt="Outdoor Activities"
-                  className="w-full h-auto rounded-lg"
+                  className="w-full h-auto"
                 />
               </div>
-              <div className="lg:w-1/2">
-                <h2 className="text-[24px] sm:text-[30px] lg:text-[35px] font-bold text-brand-dark-blue leading-tight mb-4 lg:mb-6">
+              <div className="w-[456px] bg-white p-10">
+                <h2 className="text-[34px] font-bold text-brand-dark-blue leading-[35px] mb-6">
                   Outdoor
                 </h2>
-                <p className="text-[14px] sm:text-[15px] lg:text-[16px] text-brand-medium-blue leading-relaxed mb-6">
+                <p className="text-[16px] text-brand-medium-blue leading-[26.4px] mb-6">
                   Explore the most popular biking paths, hiking trails, walking
                   paths, Parks and other attractions surrounding Merced
                 </p>
-                <p className="text-[14px] sm:text-[15px] lg:text-[16px] text-brand-medium-blue leading-relaxed">
+                <p className="text-[16px] text-brand-medium-blue leading-[26.4px]">
                   Merced is well known for the beautiful Yosemite Lake & Merced
                   River.
                 </p>
@@ -176,21 +154,14 @@ export default function Community() {
         </section>
 
         {/* Explore Section */}
-        <section className="py-8 sm:py-12 lg:py-16 bg-brand-light-gray">
+        <section className="py-[100px] bg-brand-light-gray">
           <div className="max-w-[1140px] mx-auto px-4">
-            <div className="flex flex-col lg:flex-row items-center gap-6 lg:gap-8">
-              <div className="lg:w-1/2">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F1b43864218d3427b87d8535f26c560e0"
-                  alt="Community Attractions"
-                  className="w-full h-auto rounded-lg"
-                />
-              </div>
-              <div className="lg:w-1/2">
-                <h2 className="text-[24px] sm:text-[30px] lg:text-[35px] font-bold text-brand-dark-blue leading-tight mb-4 lg:mb-6">
+            <div className="flex items-start gap-5">
+              <div className="w-[456px] bg-white p-10">
+                <h2 className="text-[35px] font-bold text-brand-dark-blue leading-[35px] mb-5">
                   Explore and enjoy these must-visit locations
                 </h2>
-                <p className="text-[14px] sm:text-[15px] lg:text-[16px] text-brand-medium-blue leading-relaxed">
+                <p className="text-[16px] text-brand-medium-blue leading-[26.4px]">
                   The popular & historic majesty of Yosemite National Park's
                   landscape living within our community puts numerous scenic
                   escapes within driving distance. The Merced County Courthouse
@@ -199,28 +170,35 @@ export default function Community() {
                   house some wonderful and exotic species.
                 </p>
               </div>
+              <div className="flex-1">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F5e1b5d4d91e74176b93746b6e062f354"
+                  alt="Yosemite National Park"
+                  className="w-full h-auto"
+                />
+              </div>
             </div>
           </div>
         </section>
 
         {/* Get in Touch Section */}
-        <section className="bg-white py-12 sm:py-16 lg:py-24">
+        <section className="bg-white py-24">
           <div className="max-w-[730px] mx-auto px-4">
-            <div className="text-center mb-8 lg:mb-12">
-              <div className="mb-4 lg:mb-6 flex justify-center">
+            <div className="text-center mb-8">
+              <div className="mb-6 flex justify-center">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F0aacace864474c43bced7c92bb6907ae"
                   alt="Contact"
-                  className="w-[80px] h-[80px] sm:w-[108px] sm:h-[108px] rounded-full border-3 border-brand-gold border-opacity-34"
+                  className="w-[108px] h-[108px] rounded-full"
                 />
               </div>
-              <h2 className="text-[24px] sm:text-[30px] lg:text-[34px] font-bold text-brand-dark-blue">
+              <h2 className="text-[34px] font-bold text-brand-dark-blue">
                 Get in Touch
               </h2>
             </div>
 
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <form onSubmit={handleSubmit}>
+              <div className="grid grid-cols-2 gap-6 mb-6">
                 <div>
                   <label className="block text-[15px] text-brand-medium-blue mb-2">
                     First Name
@@ -247,7 +225,7 @@ export default function Community() {
                 </div>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="grid grid-cols-2 gap-6 mb-6">
                 <div>
                   <label className="block text-[15px] text-brand-medium-blue mb-2">
                     Email
@@ -274,7 +252,7 @@ export default function Community() {
                 </div>
               </div>
 
-              <div>
+              <div className="mb-6">
                 <label className="block text-[15px] text-brand-medium-blue mb-2">
                   How can we help you?
                 </label>
@@ -287,18 +265,19 @@ export default function Community() {
                 />
               </div>
 
-              <div className="space-y-4">
-                <label className="block text-[15px] text-brand-medium-blue">
+              <div className="mb-6">
+                <label className="block text-[15px] text-brand-medium-blue mb-4">
                   Accept Terms of Contacting
                 </label>
                 <div className="flex items-start gap-3">
                   <input
                     type="checkbox"
+                    name="termsAccepted"
                     checked={formData.termsAccepted}
                     onChange={handleInputChange}
                     className="w-3 h-3 mt-1 bg-blue-600 rounded"
                   />
-                  <div className="text-[15px] text-brand-medium-blue leading-[24.75px]">
+                  <div className="text-[15px] text-brand-medium-blue leading-[25px]">
                     <p>
                       By pressing the Submit button, I agree to Choice Valley
                       contacting me by email and/or phone
@@ -327,35 +306,29 @@ export default function Community() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-brand-medium-gray py-8 sm:py-12 lg:py-16">
+      <footer className="bg-[#F2F4F7] py-16">
         <div className="max-w-[1120px] mx-auto px-4">
-          <div className="text-center space-y-6 lg:space-y-8">
+          <div className="text-center space-y-8">
             {/* Logo */}
-            <div className="flex justify-center mb-6 lg:mb-8">
+            <div className="flex justify-center mb-8">
               <img
                 loading="lazy"
                 src="https://cdn.builder.io/api/v1/image/assets%2F0c5380d861a94486888626352de6a4fa%2F670681162c164c8fa4395680e72a5f95"
                 alt="Choice Valley Homes Logo"
-                className="w-[300px] h-[44px] sm:w-[500px] sm:h-[74px] lg:w-[632px] lg:h-[93px] object-cover object-center"
-                style={{
-                  aspectRatio: "6.76",
-                  minHeight: "20px",
-                  minWidth: "20px",
-                  overflow: "hidden",
-                }}
+                className="w-[632px] h-[93px] object-cover object-center"
               />
             </div>
 
-            <h3 className="text-[20px] sm:text-[24px] lg:text-[30px] text-brand-medium-blue font-normal px-4">
+            <h3 className="text-[30px] text-brand-medium-blue font-normal leading-[45px] px-4">
               Building communities throughout the Central Valley
             </h3>
 
-            <p className="text-[14px] sm:text-[15px] lg:text-[16px] text-brand-medium-blue">
+            <p className="text-[16px] text-brand-medium-blue leading-[26.4px]">
               For More Information about PASEO, Please Call or Text
             </p>
 
             <div className="text-center">
-              <p className="text-[14px] sm:text-[16px] lg:text-[18px] text-brand-medium-blue leading-relaxed">
+              <p className="text-[18px] text-brand-medium-blue leading-[29px]">
                 Stephanie Stine
                 <br />
                 Community Sales Manager
@@ -367,7 +340,7 @@ export default function Community() {
             </div>
 
             <div className="text-center">
-              <p className="text-[14px] sm:text-[16px] lg:text-[18px] text-brand-medium-blue leading-relaxed">
+              <p className="text-[18px] text-brand-medium-blue leading-[29px]">
                 Hours
                 <br />
                 Monday – Closed
@@ -378,25 +351,25 @@ export default function Community() {
               </p>
             </div>
 
-            <p className="text-[14px] sm:text-[16px] lg:text-[18px] text-brand-medium-blue">
+            <p className="text-[18px] text-brand-medium-blue leading-[27px]">
               154 Montage Drive, Merced, CA 95348
             </p>
 
             {/* Contact Links */}
-            <div className="flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-4">
+            <div className="flex justify-center items-center gap-4">
               <a
                 href="tel:209-308-9000"
-                className="flex items-center gap-2 text-black font-bold text-[16px] lg:text-[18px]"
+                className="flex items-center gap-2 text-black font-bold text-[18px]"
               >
-                <Phone className="w-4 h-4 lg:w-5 lg:h-5 text-brand-gold" />
+                <Phone className="w-5 h-5 text-brand-gold" />
                 209-308-9000
               </a>
-              <span className="hidden sm:inline text-gray-300">|</span>
+              <span className="text-gray-300">|</span>
               <a
                 href="#"
-                className="flex items-center gap-2 text-black font-bold text-[16px] lg:text-[21px]"
+                className="flex items-center gap-2 text-black font-bold text-[21px]"
               >
-                <MessageSquare className="w-4 h-4 lg:w-5 lg:h-5 text-brand-gold" />
+                <MessageSquare className="w-5 h-5 text-brand-gold" />
                 Send Message
               </a>
             </div>
@@ -404,10 +377,12 @@ export default function Community() {
             {/* Social Media */}
             <div className="flex justify-center">
               <a
-                href="#"
+                href="https://www.instagram.com/choicevalleyhomes/?hl=en"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center"
               >
-                <ExternalLink className="w-6 h-6 text-white" />
+                <Instagram className="w-6 h-6 text-white" />
               </a>
             </div>
 
@@ -421,9 +396,9 @@ export default function Community() {
             </div>
 
             {/* Footer Bottom */}
-            <div className="flex flex-col sm:flex-row justify-center items-center gap-2 text-[14px] lg:text-[16px] text-black">
+            <div className="flex justify-center items-center gap-2 text-[16px] text-black">
               <span>® All Rights Reserved</span>
-              <span className="hidden sm:inline text-gray-300">|</span>
+              <span className="text-gray-300">|</span>
               <a href="#" className="hover:text-brand-gold transition-colors">
                 Privacy Policy
               </a>
