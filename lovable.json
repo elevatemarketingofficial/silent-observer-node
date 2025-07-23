@@ -1,5 +1,6 @@
 {
-  "framework": "react",
-  "buildCommand": "npm run build",
-  "outputDir": "build"
+  "outputDir": "dist/server",
+  "installCommand": "npm install",
+  "buildCommand": "npm run build:server",
+  "previewCommand": "npm start"
 }
