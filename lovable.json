@@ -1,5 +1,5 @@
 {
   "framework": "react",
   "buildCommand": "npm run build",
-  "outputDir": "dist"
+  "outputDir": "build"
 }
