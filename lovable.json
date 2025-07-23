@@ -1,6 +1,6 @@
 {
-  "outputDir": "dist/server",
+  "outputDir": "dist",
   "installCommand": "npm install",
-  "buildCommand": "npm run build:server",
+  "buildCommand": "npm run build:dev",
   "previewCommand": "npm start"
 }
