@@ -5,7 +5,7 @@ import {
   Phone,
   MessageSquare,
   Home,
-  Instagram,
+  ExternalLink,
 } from "lucide-react";
 import Header from "../components/Header";
 
@@ -498,12 +498,10 @@ export default function About() {
             {/* Social Media */}
             <div className="flex justify-center">
               <a
-                href="https://www.instagram.com/choicevalleyhomes/?hl=en"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="#"
                 className="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center"
               >
-                <Instagram className="w-6 h-6 text-white" />
+                <ExternalLink className="w-6 h-6 text-white" />
               </a>
             </div>
 

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { ChevronDown, Phone, MessageSquare, Instagram } from "lucide-react";
+import { ChevronDown, Phone, MessageSquare, Home } from "lucide-react";
 import Header from "../components/Header";
 
 const PhotoCarouselSection = () => {
@@ -615,14 +615,26 @@ export default function MountainTop() {
             </div>
 
             <div className="flex justify-center mb-8">
-              <a
-                href="https://www.instagram.com/choicevalleyhomes/?hl=en"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                to="#"
                 className="flex items-center justify-center bg-gray-800 text-white rounded-full w-12 h-12"
               >
-                <Instagram className="w-6 h-6" />
-              </a>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M15 3h6v6" />
+                  <path d="M10 14 21 3" />
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                </svg>
+              </Link>
             </div>
 
             <div className="flex justify-center mb-8">

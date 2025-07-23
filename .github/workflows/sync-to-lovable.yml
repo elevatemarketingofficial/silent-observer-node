@@ -35,7 +35,6 @@ jobs:
           rsync -av --delete \
             --exclude='.git' \
             --exclude='.lovable' \
-            --exclude='.lovable*' \
             --exclude='lovable.json' \
             builder/ lovable/
 
