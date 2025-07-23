@@ -15,12 +15,11 @@
     "build": "npm run build:client && npm run build:server",
     "build:client": "vite build",
     "build:server": "vite build --config vite.config.server.ts",
+    "build:dev": "vite build --mode development",
     "start": "node dist/server/node-build.mjs",
     "test": "vitest --run",
     "format.fix": "prettier --write .",
-    "typecheck": "tsc",
-    "build:dev": "vite build --mode development"
-}
+    "typecheck": "tsc"
   },
   "dependencies": {
     "express": "^4.18.2",
